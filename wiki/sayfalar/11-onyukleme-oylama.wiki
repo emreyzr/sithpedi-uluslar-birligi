@@ -20,14 +20,11 @@
 :''Görüşlerinizi bu başlığın altına, girintili (<code>:</code>) olarak ve imzanızla ekleyin.''
 
 == Oylama ==
-<!-- Oylama başlayınca yukarıdaki "durum" alanını "oylamada" yapın. "oylama" alanı: ulus (her ulus bir oy) veya oyuncu (her oyuncu bir oy). "eşik" alanı: salt, üçte iki veya oybirliği. -->
+<!-- Oylama başlayınca yukarıdaki "durum" alanını "oylamada" yapın. "oylama" alanı: ulus (her ulus bir oy) veya oyuncu (her oyuncu bir oy). "eşik" alanı: salt, üçte iki veya oybirliği. Oylar kendiliğinden sayılır. -->
 {{SUB Oylama
 | oylama   = ulus
 | eşik     = salt
 | bitiş    = <!-- Örn. 20 Ekim 2026 -->
-| evet     = <!-- Oylama kapanırken doldurulur -->
-| hayır    = <!-- Oylama kapanırken doldurulur -->
-| çekimser = <!-- Oylama kapanırken doldurulur -->
 }}
 === Evet ===
 

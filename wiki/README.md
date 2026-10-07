@@ -6,9 +6,9 @@ delegates open **amendment proposals** (değişiklik önerisi), **polls** (oylam
 and **discussions** (tartışma). Each request is its own wiki page, and the portal
 lists open and closed requests automatically.
 
-There's no JavaScript and no Lua modules. Everything is wikitext, ParserFunctions
-and extensions that sithpedi.com already runs (checked against
-`Special:Version` on 7 Oct 2026):
+There's no JavaScript. The pages use wikitext, one Lua module pair, and
+extensions that sithpedi.com already runs (checked against `Special:Version`
+on 7 Oct 2026):
 
 | Extension | Used for |
 |---|---|
@@ -16,17 +16,36 @@ and extensions that sithpedi.com already runs (checked against
 | InputBox | "Yeni talep aç" boxes that create a request page with a preloaded form |
 | DynamicPageList3 | Open/closed request tables and the amendment history |
 | TemplateStyles | Shared stylesheet `Şablon:SUB Portal/stil.css` |
+| Scribunto (Lua) | `Modül:SUB`: automatic vote counting, delegate checks, member list |
+
+### What the Lua module adds
+
+| Feature | How |
+|---|---|
+| **Automatic vote counting** | `{{SUB Oylama}}` reads the request page's own text and counts the signed numbered lines under *Evet / Hayır / Çekimser*. It shows the totals, whether the required majority is reached, and (for nation votes) which nations haven't voted yet. Nobody types in totals. |
+| **Invalid votes are not counted** | Unsigned votes, struck-out votes (`<s>…</s>`), a second vote by the same nation or player, votes for non-member nations, and votes cast for a nation by someone who isn't its registered delegate are left out and listed with the reason. |
+| **Delegate check on requests** | `{{SUB Talep}}` compares the opener's signature with the delegate list. It shows "✓ kayıtlı delege" (registered delegate) or a warning that the opener isn't a delegate of that nation. |
+| **One place for member data** | `Modül:SUB/veri` holds the nations, their alternative spellings, the delegates and their wiki usernames. The portal's member list and count, both tables on the Delegeler page, nation checks and vote counting all read from it. |
+
+Delegate checks only switch on for a nation once at least one of its
+delegates has a wiki username (`kullanici = '…'`) in `Modül:SUB/veri`. Until
+then that nation's requests show "doğrulanamadı" (couldn't verify) and its
+votes are matched by the nation name written in the vote line. **Fill in the
+usernames** to turn the checks on. It's a good idea to protect `Modül:SUB/veri`
+so only admins can change who counts as a delegate.
 
 ## How to install
 
-Create each page below **in this order**: templates first, then portal pages,
-then categories. Open `https://sithpedi.com/<page title>`, click **Oluştur**,
+Create each page below **in this order**: modules first, then templates, then
+portal pages, then categories. Open `https://sithpedi.com/<page title>`, click **Oluştur**,
 paste the whole file and save.
 
 The [`manifest.tsv`](manifest.tsv) file holds the same mapping in machine-readable form.
 
 | # | File | Wiki page |
 |---|---|---|
+| 0a | `sayfalar/00a-modul-sub-veri.lua` | `Modül:SUB/veri` |
+| 0b | `sayfalar/00b-modul-sub.lua` | `Modül:SUB` |
 | 1 | `sayfalar/01-sablon-sub-stil.css` | `Şablon:SUB Portal/stil.css` |
 | 2 | `sayfalar/02-sablon-sub-uye-ulus.wiki` | `Şablon:SUB Üye ulus` |
 | 3 | `sayfalar/03-sablon-sub-durum.wiki` | `Şablon:SUB Durum` |
@@ -106,40 +125,42 @@ Portal:Sithpedi Uluslar Birliği                         ← the portal (forum f
    committee. It sorts the page into the type and open/closed categories, and
    adds `__NEWSECTIONLINK__` so the page gets an "add topic" tab. DiscussionTools,
    which is installed on sithpedi.com, adds reply links to signed comments.
-3. Votes go under the **Evet / Hayır / Çekimser** headings as numbered lines,
-   so each option's count shows automatically. `{{SUB Oylama}}` displays the
-   voting rules, which are configurable per request:
+3. Votes go under the **Evet / Hayır / Çekimser** headings as signed numbered
+   lines (`# Babiller – ~~~~`). `{{SUB Oylama}}` shows the voting rules, which
+   are configurable per request, and counts the votes automatically:
    - `oylama = ulus | oyuncu`: one vote per nation, or one vote per player
    - `eşik = salt | üçte iki | oybirliği`: the majority needed
-   When the closer fills in `evet/hayır/çekimser`, it calculates whether that
-   majority was reached.
 4. A delegate closes the request by setting `durum` to `kabul`, `ret`,
    `kapandı` or `geri çekildi` and filling in `kapatan`, `kapanış` and
    `sonuç`. The page then moves from the open list to the closed list. Accepted
    amendments also appear in the declaration's *Değişiklik geçmişi*.
 
-"Only delegates may open/close requests" is an **honour rule**. A wiki can't
-enforce it without extra code. The header warns when the `ulus` field isn't a
-member nation, and any delegate can close a non-delegate request as
-`geri çekildi`.
+The wiki can't stop a non-delegate from *creating* a request page, but once
+delegate usernames are registered, such a request shows a warning. Any
+delegate can then close it as `geri çekildi`. Votes from non-delegates are
+never counted in nation votes.
 
 ### Maintenance
 
-- **New member nation:** add it to `Şablon:SUB Üye ulus`, the
-  `/Delegeler` table and the *Üye uluslar* box on the portal. Also update the
-  "6" member count in the portal's statistics row.
-- **Delegate changes:** edit `/Delegeler`. The delegates fill in the
-  *Viki kullanıcı adı* column there themselves.
+- **New member nation, delegate change or wiki username:** edit
+  `Modül:SUB/veri` only. Everything else updates automatically. Use
+  *Önizle* (preview) before saving: a missing comma or quote breaks the whole
+  portal until fixed.
 
 ## Testing
 
 Everything was tested on a local MediaWiki 1.43.1 (the same version as
-sithpedi.com) with ParserFunctions, InputBox, TemplateStyles, CategoryTree and
-DynamicPageList3 3.5.2 (the same version as sithpedi.com). The tests covered:
+sithpedi.com) with ParserFunctions, InputBox, TemplateStyles, CategoryTree,
+Scribunto (Lua 5.1) and DynamicPageList3 3.5.2 (the same version as
+sithpedi.com). The tests covered:
 
 - importing every page (all of them save cleanly and re-save without changes)
 - creating requests through each InputBox, including the preload and edit note
 - signature and date substitution
 - every status and type combination, and the categories each one gets
 - the DPL tables, the vote calculation for each majority rule
+- automatic vote counting with several test accounts: valid votes, duplicate
+  nation votes, a non-delegate voting for a nation, a non-member nation,
+  struck-out and unsigned votes, player-mode duplicates, and the opener check
+  with and without registered usernames
 - desktop, mobile and night-mode layouts in Vector 2022

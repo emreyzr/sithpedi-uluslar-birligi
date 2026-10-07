@@ -353,6 +353,31 @@
 	padding: 2px 10px;
 }
 
+/* ---------- Delege doğrulama ve sayılmayan oylar ---------- */
+.sub-dogrulama {
+	display: inline-block;
+	margin-left: 4px;
+	border-radius: 999px;
+	padding: 0 8px;
+	font-size: 0.78em;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #54595d;
+	background-color: #eaecf0;
+}
+
+.sub-dogrulama-tamam {
+	color: #ffffff;
+	background-color: #2f855a;
+}
+
+.sub-oylama-gecersiz {
+	margin-top: 8px;
+	padding-top: 6px;
+	border-top: 1px dashed #e2c66b;
+	font-size: 0.9em;
+}
+
 /* ---------- Gece modu (Vector 2022 ve Minerva) ---------- */
 @media screen {
 	html.skin-theme-clientpref-night .sub-istatistik-kutu,

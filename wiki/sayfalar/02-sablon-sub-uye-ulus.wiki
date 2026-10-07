@@ -1,22 +1,8 @@
-<includeonly>{{#switch: {{{1|}}}
- | Kan ve Demir İmparatorluğu
- | Kan ve Demir
- | KvD = {{#if:{{{2|}}}|[[Kan ve Demir İmparatorluğu]]|Kan ve Demir İmparatorluğu}}
- | Antik Roma İmparatorluğu
- | Roma İmparatorluğu
- | Roma = {{#if:{{{2|}}}|[[Antik Roma İmparatorluğu]]|Antik Roma İmparatorluğu}}
- | Ütopya
- | Ütopya Komünü = {{#if:{{{2|}}}|[[Ütopya]]|Ütopya}}
- | Babiller = {{#if:{{{2|}}}|[[Babiller]]|Babiller}}
- | Güneş Kağanlığı = {{#if:{{{2|}}}|[[Güneş Kağanlığı]]|Güneş Kağanlığı}}
- | Doğru Köyü
- | Doğru Köy = {{#if:{{{2|}}}|[[Doğru Köyü]]|Doğru Köyü}}
- | #default =
-}}</includeonly><noinclude>
+<includeonly>{{#invoke:SUB|ulus}}</includeonly><noinclude>
 == Şablon Açıklaması ==
 Bu şablon, verilen adın [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nin üye uluslarından biri olup olmadığını denetler. Ad bir üyeye aitse ulusun resmî adını, değilse boş sonuç döndürür. {{tl|SUB Talep}} şablonu, talebi açan ulusu doğrulamak için bu şablonu kullanır.
 
-Birliğe '''yeni bir ulus katıldığında''' ya da bir ulus ayrıldığında yalnızca bu şablonun güncellenmesi yeterlidir.
+Üye uluslar ve kabul edilen başka yazılışlar (takma adlar) [[Modül:SUB/veri]] sayfasında tutulur. Birliğe yeni bir ulus katıldığında yalnızca o sayfanın güncellenmesi yeterlidir.
 
 == Kullanımı ==
 * <code><nowiki>{{SUB Üye ulus|Babiller}}</nowiki></code> → {{SUB Üye ulus|Babiller}}

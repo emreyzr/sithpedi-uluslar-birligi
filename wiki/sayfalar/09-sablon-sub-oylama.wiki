@@ -1,26 +1,13 @@
-<includeonly><templatestyles src="Şablon:SUB Portal/stil.css" /><div class="sub-oylama">
-<div class="sub-oylama-baslik">Oylama kuralları</div>
-* '''Oy usulü:''' {{#switch:{{lc:{{{oylama|ulus}}}}}
- | oyuncu | oyuncu başına = Oyuncu başına bir oy. Birliğe üye ulusların her oyuncusu kendi adına bir kez oy kullanabilir.
- | #default = Ulus başına bir oy. Her üye ulus, [[Portal:Sithpedi Uluslar Birliği/Delegeler|delegelerinden]] biri aracılığıyla tek bir oy kullanır. Oyunuzu, ulusunuzun adıyla birlikte yazın.
-}}
-* '''Gerekli çoğunluk:''' {{#switch:{{lc:{{{eşik|salt}}}}}
- | üçte iki | 2/3 = Üçte iki çoğunluk (evet oyları, geçerli oyların en az üçte ikisi olmalıdır).
- | oybirliği = Oybirliği (hiç hayır oyu olmamalıdır).
- | #default = Salt çoğunluk (evet oyları, hayır oylarından fazla olmalıdır).
-}} Çekimser oylar hesaba katılmaz.
-* '''Oylamanın bitişi:''' {{#if:{{{bitiş|}}}|{{{bitiş}}}|''belirtilmedi''}}
-* Oy vermek için aşağıdaki ''Evet'', ''Hayır'' veya ''Çekimser'' başlıklarından birinin '''değiştir''' bağlantısına tıklayıp yeni bir satıra <code>#</code> ile başlayarak {{#switch:{{lc:{{{oylama|ulus}}}}}|oyuncu|oyuncu başına=imzanızı|#default=ulusunuzun adını ve imzanızı}} (<code>&#126;&#126;&#126;&#126;</code>) ekleyin. Gerekçe yazmak isteğe bağlıdır.{{#if:{{{evet|}}}{{{hayır|}}}{{{çekimser|}}}|
-<div class="sub-oylama-sayilar"><span class="sub-oylama-sayi">'''Evet:''' {{#if:{{{evet|}}}|{{{evet}}}|0}}</span><span class="sub-oylama-sayi">'''Hayır:''' {{#if:{{{hayır|}}}|{{{hayır}}}|0}}</span><span class="sub-oylama-sayi">'''Çekimser:''' {{#if:{{{çekimser|}}}|{{{çekimser}}}|0}}</span><span class="sub-oylama-sayi">'''Sonuç:''' {{#iferror:{{#switch:{{lc:{{{eşik|salt}}}}}
- | üçte iki | 2/3 = {{#ifexpr:({{#if:{{{evet|}}}|{{{evet}}}|0}}) > 0 and ({{#if:{{{evet|}}}|{{{evet}}}|0}}) >= 2 * ({{#if:{{{hayır|}}}|{{{hayır}}}|0}})|'''Gerekli çoğunluk sağlandı'''|Gerekli çoğunluk sağlanamadı}}
- | oybirliği = {{#ifexpr:({{#if:{{{evet|}}}|{{{evet}}}|0}}) > 0 and ({{#if:{{{hayır|}}}|{{{hayır}}}|0}}) = 0|'''Gerekli çoğunluk sağlandı'''|Gerekli çoğunluk sağlanamadı}}
- | #default = {{#ifexpr:({{#if:{{{evet|}}}|{{{evet}}}|0}}) > ({{#if:{{{hayır|}}}|{{{hayır}}}|0}})|'''Gerekli çoğunluk sağlandı'''|Gerekli çoğunluk sağlanamadı}}
-}}|''sayılar hatalı girilmiş''}}</span></div>}}
-</div></includeonly><noinclude>
+<includeonly><templatestyles src="Şablon:SUB Portal/stil.css" />{{#invoke:SUB|oylama}}</includeonly><noinclude>
 == Şablon Açıklaması ==
-Bu şablon, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] taleplerindeki ''Oylama'' bölümünün başında yer alır. Oy usulünü, gerekli çoğunluğu ve oylamanın bitiş tarihini gösterir. Oylama kapanırken sayılar girildiğinde sonucun gerekli çoğunluğu sağlayıp sağlamadığını kendisi hesaplar.
+Bu şablon, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] taleplerindeki ''Oylama'' bölümünün başında yer alır. Oy usulünü, gerekli çoğunluğu ve oylamanın bitiş tarihini gösterir. [[Modül:SUB]] aracılığıyla sayfadaki oyları '''kendiliğinden sayar''' ve sonucu hesaplar.
 
-Oylar, şablonun altındaki ''Evet'', ''Hayır'' ve ''Çekimser'' başlıklarına numaralı liste (<code>#</code>) olarak eklenir; böylece her seçeneğin oy sayısı listede kendiliğinden görünür.
+Oylar, şablonun altındaki ''Evet'', ''Hayır'' ve ''Çekimser'' başlıklarına numaralı liste (<code>#</code>) olarak, imzayla eklenir. Modül her satırdaki imzadan oy verenin viki kullanıcı adını bulur ve:
+* '''Ulus oylamasında''' her ulusun yalnızca ilk oyunu sayar. Satırda ulus yazılmamışsa, imza sahibinin [[Modül:SUB/veri]] sayfasında kayıtlı olduğu ulusu kullanır. Ulus için kayıtlı viki hesapları varsa, oy veren kişinin o ulusun delegesi olup olmadığını denetler.
+* '''Oyuncu oylamasında''' her kullanıcının yalnızca ilk oyunu sayar.
+* İmzasız, üstü çizilmiş (<code>&lt;s&gt;…&lt;/s&gt;</code>) ve yukarıdaki kurallara uymayan oyları saymaz; bunları nedenleriyle birlikte "Sayılmayan oylar" listesinde gösterir.
+
+Sayım, sayfanın '''kaydedilmiş''' hâline göre yapılır; önizlemede yeni eklediğiniz oy henüz sayılmaz.
 
 == Parametreler ==
 {| class="wikitable"
@@ -31,15 +18,20 @@ Oylar, şablonun altındaki ''Evet'', ''Hayır'' ve ''Çekimser'' başlıkların
 | <code>eşik</code> || <code>salt</code> (salt çoğunluk), <code>üçte iki</code> veya <code>oybirliği</code> || <code>salt</code>
 |-
 | <code>bitiş</code> || Oylamanın biteceği tarih (serbest metin) || —
-|-
-| <code>evet</code>, <code>hayır</code>, <code>çekimser</code> || Oylama kapanırken girilen oy sayıları. Doldurulduğunda sonuç hesaplanır. || —
 |}
 
-== Örnekler ==
-<pre>{{SUB Oylama|oylama=ulus|eşik=üçte iki|bitiş=20 Ekim 2026}}</pre>
-{{SUB Oylama|oylama=ulus|eşik=üçte iki|bitiş=20 Ekim 2026}}
-
-<pre>{{SUB Oylama|oylama=oyuncu|eşik=salt|bitiş=20 Ekim 2026|evet=7|hayır=3|çekimser=1}}</pre>
-{{SUB Oylama|oylama=oyuncu|eşik=salt|bitiş=20 Ekim 2026|evet=7|hayır=3|çekimser=1}}
+== Kullanımı ==
+<pre>
+== Oylama ==
+{{SUB Oylama
+| oylama = ulus
+| eşik   = üçte iki
+| bitiş  = 20 Ekim 2026
+}}
+=== Evet ===
+# Babiller – ~~~~
+=== Hayır ===
+=== Çekimser ===
+</pre>
 
 [[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

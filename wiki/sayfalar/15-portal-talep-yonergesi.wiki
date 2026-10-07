@@ -15,7 +15,7 @@ Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portal�
 == Kimler talep açabilir? ==
 * Talep açma ve kapatma yetkisi yalnızca üye ulusların [[Portal:Sithpedi Uluslar Birliği/Delegeler|delegelerine]] aittir.
 * Delege olmayan oyuncular açık taleplere '''görüş''' yazabilir. Oyuncu başına yapılan oylamalarda oy da kullanabilirler.
-* Viki bu kuralı teknik olarak denetleyemez; kural güvene dayanır. Delege olmayan biri tarafından açılan talepler herhangi bir delege tarafından '''geri çekildi''' durumuna alınarak kapatılabilir.
+* Delegelerin viki hesapları [[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]] sayfasında kayıtlıysa, talebi açan kişi kendiliğinden denetlenir: kayıtlı delegelerin taleplerinde "✓ kayıtlı delege" rozeti görünür, diğerlerinde uyarı çıkar. Viki yine de talep açılmasını engellemez. Delege olmayan biri tarafından açılan talepler herhangi bir delege tarafından '''geri çekildi''' durumuna alınarak kapatılabilir.
 
 == Talep nasıl açılır? ==
 # [[Portal:Sithpedi Uluslar Birliği#Yeni talep aç|Portal sayfasındaki]] ilgili kutuya talebin kısa ve açıklayıcı başlığını yazın, ardından düğmeye tıklayın.
@@ -31,7 +31,7 @@ Başlık benzersiz olmalıdır. Aynı başlıkta bir talep zaten varsa düğme, 
 
 == Oylama ==
 * '''Oy usulü ve gerekli çoğunluk''' talebi açan delege tarafından {{tl|SUB Oylama}} şablonunda belirlenir:
-** <code>oylama = ulus</code>: Her üye ulus, delegelerinden biri aracılığıyla '''tek''' oy kullanır. Bir ulus adına birden fazla oy verilirse yalnızca '''ilk''' oy sayılır.
+** <code>oylama = ulus</code>: Her üye ulus, delegelerinden biri aracılığıyla '''tek''' oy kullanır. Bir ulus adına birden fazla oy verilirse yalnızca '''ilk''' oy sayılır. Ulusun kayıtlı viki hesapları varsa, delege olmayan kişilerin o ulus adına verdiği oylar sayılmaz.
 ** <code>oylama = oyuncu</code>: Birliğe üye ulusların her oyuncusu kendi adına '''bir kez''' oy kullanır.
 ** <code>eşik = salt</code>: Evet oyları hayır oylarından fazla olmalıdır.
 ** <code>eşik = üçte iki</code>: Evet oyları, geçerli oyların (evet + hayır) en az üçte ikisi olmalıdır.
@@ -40,10 +40,12 @@ Başlık benzersiz olmalıdır. Aynı başlıkta bir talep zaten varsa düğme, 
 * Oy usulü ve eşik, oylama başladıktan sonra değiştirilemez.
 * Değişiklik önerileri önce tartışılır. Tartışma tamamlanınca talebi açan delege <code>durum</code> alanını <code>oylamada</code> yapar ve oylamanın bitiş tarihini (<code>bitiş</code>) yazar. Oylama süresinin en az '''7 gün''' olması önerilir.
 * Oy vermek için ''Evet'', ''Hayır'' veya ''Çekimser'' başlığının '''değiştir''' bağlantısına tıklayın ve yeni bir satıra <code># Ulus adı – <nowiki>~~~~</nowiki></code> (oyuncu oylamasında <code># <nowiki>~~~~</nowiki></code>) yazın.
+* Oylar sayfa kaydedildiğinde '''kendiliğinden sayılır'''. İmzasız oylar, aynı ulusun ya da aynı oyuncunun ikinci oyu ve üye olmayan uluslar adına verilen oylar sayılmaz; bunlar oylama kutusunda nedenleriyle listelenir.
+* Oyunuzu geri çekmek için satırınızı silmeyin; üstünü çizin (<code><nowiki><s>…</s></nowiki></code>). Ardından isterseniz başka bir başlığın altına yeniden oy verebilirsiniz.
 
 == Talep nasıl kapatılır? ==
 Oylama süresi dolduğunda ya da tartışma sonuçlandığında herhangi bir delege talebi kapatabilir. Talebi açan delegenin kendi talebini kapatmaması önerilir.
-# {{tl|SUB Oylama}} şablonundaki <code>evet</code>, <code>hayır</code> ve <code>çekimser</code> alanlarına oy sayılarını yazın. Şablon, gerekli çoğunluğun sağlanıp sağlanmadığını kendisi gösterir.
+# Oylama kutusundaki sayımı ve sonucu denetleyin. Oylar kendiliğinden sayılır; ''Sayılmayan oylar'' listesi varsa gözden geçirin.
 # {{tl|SUB Talep}} şablonunda <code>durum</code> alanını sonuca göre değiştirin: <code>kabul</code>, <code>ret</code>, <code>kapandı</code> (sonuçlanan tartışmalar için) ya da <code>geri çekildi</code>.
 # <code>kapatan</code> alanına <code><nowiki>~~~</nowiki></code>, <code>kapanış</code> alanına <code><nowiki>~~~~~</nowiki></code> yazın ve <code>sonuç</code> alanına kısa bir özet ekleyin.
 # Kabul edilen bir değişiklik önerisi, kapatan delege tarafından [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'ne işlenir. Değişiklik, bildirgenin ''Değişiklik geçmişi'' bölümünde kendiliğinden listelenir.

@@ -15,7 +15,7 @@ __NOTOC__ __NOEDITSECTION__
 <span class="sub-menu-oge">[[:Kategori:Sithpedi Uluslar Birliği talepleri|Tüm talepler]]</span>
 </div>
 <div class="sub-istatistik">
-<div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">6</div><div class="sub-istatistik-etiket">Üye ulus</div></div>
+<div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{#invoke:SUB|uyeSayisi}}</div><div class="sub-istatistik-etiket">Üye ulus</div></div>
 <div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{PAGESINCATEGORY:Sithpedi Uluslar Birliği açık talepleri|pages}}</div><div class="sub-istatistik-etiket">[[:Kategori:Sithpedi Uluslar Birliği açık talepleri|Açık talep]]</div></div>
 <div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{PAGESINCATEGORY:Sithpedi Uluslar Birliği kabul edilen talepleri|pages}}</div><div class="sub-istatistik-etiket">[[:Kategori:Sithpedi Uluslar Birliği kabul edilen talepleri|Kabul edilen]]</div></div>
 <div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{PAGESINCATEGORY:Sithpedi Uluslar Birliği talepleri|pages}}</div><div class="sub-istatistik-etiket">[[:Kategori:Sithpedi Uluslar Birliği talepleri|Toplam talep]]</div></div>
@@ -113,13 +113,8 @@ noresultsheader = ''Henüz kapanmış bir talep bulunmamaktadır.''
 <div class="sub-kutu">
 <div class="sub-kutu-baslik">Üye uluslar</div>
 <div class="sub-kutu-icerik">
-* [[Kan ve Demir İmparatorluğu]]
-* [[Antik Roma İmparatorluğu]]
-* [[Ütopya]]
-* [[Babiller]]
-* [[Güneş Kağanlığı]]
-* [[Doğru Köyü]]
-<div class="sub-not">Altı kurucu ulus, 3 Ağustos 2026.</div>
+{{#invoke:SUB|uyeListesi}}
+<div class="sub-not">Kuruluş: 3 Ağustos 2026 (altı kurucu ulus).</div>
 </div>
 </div>
 <div class="sub-kutu">

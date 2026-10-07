@@ -2,13 +2,12 @@
 <div class="sub-talep sub-talep-{{SUB Tür|{{{tür|}}}|anahtar}}">
 <div class="sub-talep-ust"><span>[[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] › [[Portal:Sithpedi Uluslar Birliği#Talepler|Talepler]]</span><span>{{SUB Tür|{{{tür|}}}}} {{SUB Durum|{{{durum|}}}}}</span></div>
 <div class="sub-talep-govde">
-<div class="sub-talep-alan"><span class="sub-talep-etiket">Açan delege</span>{{#if:{{{açan|}}}|{{{açan}}}|—}}</div>
+<div class="sub-talep-alan"><span class="sub-talep-etiket">Açan delege</span>{{#if:{{{açan|}}}|{{{açan}}}{{#invoke:SUB|acanDurumu}}|—}}</div>
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Temsil ettiği ulus</span>{{#if:{{SUB Üye ulus|{{{ulus|}}}}}|{{SUB Üye ulus|{{{ulus|}}}|bağlantı}}|{{#if:{{{ulus|}}}|{{{ulus}}}|—}}}}</div>
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Açılış tarihi</span>{{#if:{{{tarih|}}}|{{{tarih}}}|—}}</div>
 <div class="sub-talep-alan"><span class="sub-talep-etiket">İlgili komite</span>{{SUB Komite|{{{komite|}}}}}</div>{{#if:{{{madde|}}}|
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Değiştirilen madde</span>[[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|{{{madde}}}]]</div>}}
-</div>{{#if:{{SUB Üye ulus|{{{ulus|}}}}}||
-<div class="sub-talep-uyari">'''Uyarı:''' Bu talepte geçerli bir üye ulus belirtilmemiş. Talepler yalnızca üye ulusların [[Portal:Sithpedi Uluslar Birliği/Delegeler|delegeleri]] tarafından açılabilir. Talebi açan delege, <code>ulus</code> alanına temsil ettiği ulusu yazmalıdır.</div>}}{{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}
+</div>{{#invoke:SUB|talepUyarisi}}{{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}
 | kabul | ret | kapandi | geri =
 <div class="sub-talep-sonuc {{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}|kabul=|ret=sub-talep-sonuc-ret|#default=sub-talep-sonuc-notr}}">'''Bu talep kapanmıştır''' — {{SUB Durum|{{{durum|}}}}}{{#if:{{{kapatan|}}}|&#32;· Kapatan: {{{kapatan}}}}}{{#if:{{{kapanış|}}}|&#32;· {{{kapanış}}}}}{{#if:{{{sonuç|}}}|<br />'''Sonuç:''' {{{sonuç}}}}}<br /><span class="sub-not">Kapanmış talepler arşiv niteliğindedir; lütfen değiştirmeyin. Konuyu yeniden gündeme getirmek için yeni bir talep açın.</span></div>
 | #default =
@@ -30,6 +29,8 @@
 Bu şablon, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portalında açılan her talebin (değişiklik önerisi, oylama veya tartışma) en üstünde yer alır. Talebin türünü, durumunu, açan delegeyi ve ilgili komiteyi gösterir; talebi doğru kategorilere ekleyerek portaldaki listelerde görünmesini sağlar.
 
 Bu şablonu elle eklemenize gerek yoktur: portaldaki "Yeni talep aç" kutularından biriyle sayfa oluşturduğunuzda şablon hazır gelir.
+
+Şablon, talebi açan kişinin imzasını [[Modül:SUB/veri]] sayfasındaki delege kayıtlarıyla karşılaştırır. Kullanıcı belirtilen ulusun kayıtlı delegesiyse "✓ kayıtlı delege" rozeti gösterilir, değilse bir uyarı çıkar. Ulus için kayıtlı viki hesabı yoksa "doğrulanamadı" yazar.
 
 Şablon yalnızca <code>Portal:Sithpedi Uluslar Birliği/Talepler/…</code> adlı sayfalarda kategori ekler; bu sayede örnek ve belgeleme sayfaları listelere karışmaz.
 
