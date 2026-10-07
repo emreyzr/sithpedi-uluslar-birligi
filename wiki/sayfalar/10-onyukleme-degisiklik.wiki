@@ -1,0 +1,51 @@
+<includeonly>{{SUB Talep
+| tür     = değişiklik
+| durum   = tartışmada
+| açan    = ~~<noinclude></noinclude>~
+| ulus    = <!-- Temsil ettiğiniz ulus: Kan ve Demir İmparatorluğu, Antik Roma İmparatorluğu, Ütopya, Babiller, Güneş Kağanlığı veya Doğru Köyü -->
+| tarih   = ~~<noinclude></noinclude>~~<noinclude></noinclude>~
+| komite  = <!-- güvenlik, ulaştırma, ortak alan, ticaret, tarih veya genel -->
+| madde   = <!-- Değiştirilmesi önerilen madde, örn. Madde III. Yeni bir madde öneriyorsanız "Yeni madde" yazın. -->
+| kapatan = <!-- Talep kapanırken doldurulur -->
+| kapanış = <!-- Talep kapanırken doldurulur -->
+| sonuç   = <!-- Talep kapanırken doldurulur -->
+}}
+<!-- Gri açıklama satırlarını kaydetmeden önce silebilirsiniz. -->
+== Özet ==
+<!-- Önerinizi bir-iki cümleyle özetleyin. -->
+
+== Mevcut metin ==
+<!-- Değiştirilmesini önerdiğiniz metni Kuruluş Bildirgesi'nden olduğu gibi kopyalayın. -->
+
+== Önerilen metin ==
+<!-- Maddenin yeni hâlini tam olarak yazın. -->
+
+== Gerekçe ==
+<!-- Bu değişiklik neden gerekli? -->
+
+== Görüşler ==
+:''Görüşlerinizi bu başlığın altına, girintili (<code>:</code>) olarak ve imzanızla ekleyin. Yeni bir alt konu açmak için üstteki "Yeni görüş başlığı ekle" bağlantısını kullanın.''
+
+== Oylama ==
+<!-- Oylama başlayınca yukarıdaki "durum" alanını "oylamada" yapın. "oylama" alanı: ulus (her ulus bir oy) veya oyuncu (her oyuncu bir oy). "eşik" alanı: salt, üçte iki veya oybirliği. -->
+{{SUB Oylama
+| oylama   = ulus
+| eşik     = üçte iki
+| bitiş    = <!-- Örn. 20 Ekim 2026 -->
+| evet     = <!-- Oylama kapanırken doldurulur -->
+| hayır    = <!-- Oylama kapanırken doldurulur -->
+| çekimser = <!-- Oylama kapanırken doldurulur -->
+}}
+=== Evet ===
+
+=== Hayır ===
+
+=== Çekimser ===
+</includeonly><noinclude>
+== Ön yükleme şablonu ==
+Bu sayfa bir '''ön yükleme (preload) şablonudur'''. [[Portal:Sithpedi Uluslar Birliği|Portal]] sayfasındaki "Değişiklik önerisi" kutusuyla yeni bir talep oluşturulduğunda, bu sayfanın <code>&lt;includeonly&gt;</code> etiketleri arasındaki içerik düzenleme kutusuna hazır olarak gelir. Sayfanın kendisi görüntülendiğinde yalnızca bu açıklama görünür.
+
+Not: İmza ve tarih işaretleri (<code><nowiki>~~~</nowiki></code>, <code><nowiki>~~~~~</nowiki></code>) bu sayfa kaydedilirken imzaya dönüşmesin diye araya boş <code>&lt;noinclude&gt;&lt;/noinclude&gt;</code> etiketleri konularak yazılmıştır. Bu etiketleri silmeyin.
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]
+</noinclude>

@@ -1,0 +1,3 @@
+Durum alanı boş bırakılmış ya da tanınmayan bir değer içeren [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] talepleri. Bu sayfalardaki {{tl|SUB Talep}} şablonunun <code>durum</code> alanı düzeltilmelidir.
+
+[[Kategori:Sithpedi Uluslar Birliği talepleri]]

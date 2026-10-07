@@ -1,0 +1,16 @@
+<includeonly>{{#ifeq:{{{2|}}}|anahtar||<templatestyles src="Şablon:SUB Portal/stil.css" />}}{{#switch: {{lc:{{{1|}}}}}
+ | değişiklik | değişiklik önerisi | değişiklik teklifi = {{#ifeq:{{{2|}}}|anahtar|degisiklik|<span class="sub-rozet sub-rozet-tur">Değişiklik önerisi</span>}}
+ | oylama | anket = {{#ifeq:{{{2|}}}|anahtar|oylama|<span class="sub-rozet sub-rozet-tur">Oylama</span>}}
+ | tartışma | görüşme = {{#ifeq:{{{2|}}}|anahtar|tartisma|<span class="sub-rozet sub-rozet-tur">Tartışma</span>}}
+ | #default = {{#ifeq:{{{2|}}}|anahtar||<span class="sub-rozet sub-rozet-tur">Talep</span>}}
+}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+Bir [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] talebinin türünü rozet olarak gösterir. İkinci parametre <code>anahtar</code> verilirse rozet yerine sabit bir anahtar döndürür (<code>degisiklik</code>, <code>oylama</code>, <code>tartisma</code>).
+
+== Kullanımı ==
+* <code><nowiki>{{SUB Tür|değişiklik}}</nowiki></code> → {{SUB Tür|değişiklik}}
+* <code><nowiki>{{SUB Tür|oylama}}</nowiki></code> → {{SUB Tür|oylama}}
+* <code><nowiki>{{SUB Tür|tartışma}}</nowiki></code> → {{SUB Tür|tartışma}}
+* <code><nowiki>{{SUB Tür|oylama|anahtar}}</nowiki></code> → {{SUB Tür|oylama|anahtar}}
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

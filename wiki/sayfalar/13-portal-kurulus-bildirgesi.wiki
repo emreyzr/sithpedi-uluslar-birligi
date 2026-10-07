@@ -1,0 +1,89 @@
+{{MinecraftKonu|iu}}
+{{#ifexist:Dosya:Sithpedi Uluslar Birliği bayrağı.png|[[Dosya:Sithpedi Uluslar Birliği bayrağı.png|150px|center|link=Portal:Sithpedi Uluslar Birliği]]}}
+<div style="text-align:center;">
+<span style="font-size:0.9em; letter-spacing:0.08em;">'''SİTHPEDİ ULUSLAR BİRLİĞİ'''</span>
+
+<span style="font-size:2em; font-family:'Linux Libertine','Georgia','Times',serif;">'''KURULUŞ BİLDİRGESİ'''</span>
+
+Düzenleyen ve Sunan:<br />''[[Kan ve Demir İmparatorluğu]]'ndan Demir Şansölye [[Emre]]''
+
+3 Ağustos 2026 · Atatürk Orman Çiftliği<br />''"[[Kralın Vasiyeti]]'nin Işığında, Yeni Bir Çağın Şafağında…"''
+</div>
+
+{| class="wikitable" style="margin:1em auto; max-width:720px; font-size:0.9em;"
+| Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nin kurucu belgesidir. Metin, yalnızca [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|talep yönergesine]] uygun olarak açılan ve '''kabul edilen''' değişiklik önerileri doğrultusunda değiştirilir. Yapılan değişiklikler aşağıdaki [[#Değişiklik geçmişi|Değişiklik geçmişi]] bölümünde listelenir.
+|}
+
+== Giriş ==
+Bizler; Sithpedi topraklarının kadim, onurlu ve bağımsız ulusları olarak, geçmişin mirasını omuzlarımızda taşıyor ve geleceğin temellerini kendi ellerimizle atıyoruz.
+
+Kral I. [[east]]'in Vasiyeti'nde açıkça belirtildiği üzere; tek bir tacın, tek bir tahtın ve tek bir otoritenin gölgesinde yaşanan çağ '''artık sona ermiştir'''. Bugün, kılıçların ve kalkanların yerini diplomasinin, ayrılığın yerini ise ortak aklın aldığı yeni bir devrin başlangıcıdır. Diyarımızın bütünlüğü, ancak ve ancak onu oluşturan farklı kültürlerin ve kudretli devletlerin bir arada, eşit şartlarda durmasıyla sağlanabilir.
+
+Bu yüce amaç ve sarsılmaz inanç doğrultusunda;
+
+'''[[Kan ve Demir İmparatorluğu]]'nun''' sarsılmaz iradesi, '''[[Antik Roma İmparatorluğu]]'nun''' kadim nizamı, '''[[Ütopya]]'nın''' aydınlık vizyonu, '''[[Babiller]]'in''' istikrarlı çalışkanlığı, '''[[Doğru Köyü]]'nün''' köklü bilgeliği ve '''[[Güneş Kağanlığı]]'nın''' bitmek bilmez ateşi ile...
+
+'''Sithpedi Uluslar Birliği resmen kurulmuştur!'''
+
+Bu birlik, ulusların bağımsızlığını yok sayan bir imparatorluk değil; her bir devletin kendi kaderini tayin ederken, diyarın ortak refahı için omuz omuza verdiği yüce bir ittifaktır. Birlik düzeninin ve kıtasal kalkınmanın teminatı olarak, yetki ve sorumluluklar şu beş ana komiteye devredilmiştir:
+
+== Maddeler ==
+=== Madde I: Güvenlik Konseyi ===
+Diyar üzerindeki barışın kalkanı ve terazisidir. Uluslar arasındaki diplomatik dengelerin korunması, olası sınır veya çıkar çatışmalarının kılıç çekilmeden, masa başında adalete uygun bir şekilde çözülmesi bu konseyin mutlak sorumluluğundadır.
+
+=== Madde II: Ulaştırma ve Altyapı Komitesi ===
+Uzakları yakın kılan, ulusları birbirine bağlayan damarlarımızdır. Birlik üyeleri arasındaki "Interfactional" yolların, devasa köprülerin ve geçitlerin inşasını koordine edecek; medeniyetin her bir köşeye kesintisiz ulaşmasını sağlayacaktır.
+
+=== Madde III: Ortak Alan Komitesi ===
+Birliğimizin kalbinin attığı yerlerin mimarlarıdır. Başta diyara nefes ve hayat veren Atatürk Orman Çiftliği olmak üzere, hiçbir ulusun tekeline girmeyecek, herkesin özgürce bir araya gelebileceği tarafsız toplanma ve sosyal alanların inşasından sorumludur.
+
+=== Madde IV: Ticaret ve İşbirliği Komitesi ===
+Sithpedi topraklarındaki refahın anahtarıdır. Faction'ların köylülerle olan ticareti düzenleyecek, haksız rekabeti önleyecek ve bilgi/kaynak paylaşımını teşvik ederek tüm üye devletlerin ortak ekonomik kalkınmasını destekleyecektir.
+
+=== Madde V: Sithpedi Tarihini Araştırma Komitesi ===
+Geçmişimizin bekçileri ve geleceğimizin yazarlarıdır. Eski krallık döneminden, "[[Kralın Vasiyeti]]"ne ve Birlik dönemine kadar yaşanan tüm savaşları, barışları, inşa edilen şaheserleri kayıt altına alacak; Sithpedi Külliyatı'nı gelecek nesiller (ve oyuncular) için koruyacaktır.
+
+== Yemin ==
+Biz, aşağıda mührü bulunan kurucu devletlerin liderleri olarak; Kralın Vasiyeti'ne sadık kalacağımıza, Birliğin kurallarına riayet edeceğimize ve Sithpedi topraklarında barışı, adaleti ve ortak gelişimi savunacağımıza and içeriz.
+
+''Yaşasın Bağımsız Uluslar, Yaşasın Sithpedi Uluslar Birliği!''
+
+== Kurucu devletler ==
+{{#ifexist:Dosya:Kan ve Demir İmparatorluğu sancağı.png|<gallery mode="nolines" widths=90 heights=160>
+Dosya:Kan ve Demir İmparatorluğu sancağı.png|[[Kan ve Demir İmparatorluğu]]
+Dosya:Antik Roma İmparatorluğu sancağı.png|[[Antik Roma İmparatorluğu]]
+Dosya:SUB kurucu sancak 3.png|Kurucu sancak
+</gallery>}}
+* [[Kan ve Demir İmparatorluğu]]
+* [[Antik Roma İmparatorluğu]]
+* [[Ütopya]]
+* [[Babiller]]
+* [[Güneş Kağanlığı]]
+* [[Doğru Köyü]]
+
+== Toplantı katılımcıları ==
+Kuruluş toplantısı 3 Ağustos 2026'da Atatürk Orman Çiftliği'nde yapılmıştır. Toplantıya katılanlar:
+* Yüksek Ekselansları Demir Şansölye [[Emre]]
+* Caesar Augustus İmparator Narkeus
+* İmparatoriçe Meiche
+* Ütopya'dan [[Soke]]
+* Ütopya'dan GiresunPasasi
+* Babiller'den Ziara
+* Babiller'den Horizon
+* Babiller'den Kuskulu
+* Güneş Kağanlığı'ndan Darth Supreme
+
+== Değişiklik geçmişi ==
+Bu bölüm, kabul edilen değişiklik önerilerini kendiliğinden listeler.
+<dpl>
+notnamespace = Kategori
+category = Sithpedi Uluslar Birliği değişiklik önerileri
+category = Sithpedi Uluslar Birliği kabul edilen talepleri
+ordermethod = firstedit
+order = ascending
+include = {SUB Talep¦SUB Talep/satır}
+format = {¦ class="wikitable sortable" style="width:100%;"\n! Talep !! Tür !! Durum !! Ulus,,,\n¦}
+noresultsheader = ''Henüz kabul edilmiş bir değişiklik önerisi bulunmamaktadır.''
+</dpl>
+
+[[Kategori:Sithpedi Uluslar Birliği]]

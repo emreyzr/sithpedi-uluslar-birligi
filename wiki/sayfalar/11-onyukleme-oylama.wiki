@@ -1,0 +1,44 @@
+<includeonly>{{SUB Talep
+| tür     = oylama
+| durum   = oylamada
+| açan    = ~~<noinclude></noinclude>~
+| ulus    = <!-- Temsil ettiğiniz ulus: Kan ve Demir İmparatorluğu, Antik Roma İmparatorluğu, Ütopya, Babiller, Güneş Kağanlığı veya Doğru Köyü -->
+| tarih   = ~~<noinclude></noinclude>~~<noinclude></noinclude>~
+| komite  = <!-- güvenlik, ulaştırma, ortak alan, ticaret, tarih veya genel -->
+| kapatan = <!-- Talep kapanırken doldurulur -->
+| kapanış = <!-- Talep kapanırken doldurulur -->
+| sonuç   = <!-- Talep kapanırken doldurulur -->
+}}
+<!-- Gri açıklama satırlarını kaydetmeden önce silebilirsiniz. -->
+== Soru ==
+<!-- Oylamaya sunulan soruyu ya da kararı açıkça yazın. -->
+
+== Arka plan ==
+<!-- Gerekirse konunun arka planını ve seçeneklerin ne anlama geldiğini açıklayın. -->
+
+== Görüşler ==
+:''Görüşlerinizi bu başlığın altına, girintili (<code>:</code>) olarak ve imzanızla ekleyin.''
+
+== Oylama ==
+<!-- Oylama başlayınca yukarıdaki "durum" alanını "oylamada" yapın. "oylama" alanı: ulus (her ulus bir oy) veya oyuncu (her oyuncu bir oy). "eşik" alanı: salt, üçte iki veya oybirliği. -->
+{{SUB Oylama
+| oylama   = ulus
+| eşik     = salt
+| bitiş    = <!-- Örn. 20 Ekim 2026 -->
+| evet     = <!-- Oylama kapanırken doldurulur -->
+| hayır    = <!-- Oylama kapanırken doldurulur -->
+| çekimser = <!-- Oylama kapanırken doldurulur -->
+}}
+=== Evet ===
+
+=== Hayır ===
+
+=== Çekimser ===
+</includeonly><noinclude>
+== Ön yükleme şablonu ==
+Bu sayfa bir '''ön yükleme (preload) şablonudur'''. [[Portal:Sithpedi Uluslar Birliği|Portal]] sayfasındaki "Oylama" kutusuyla yeni bir talep oluşturulduğunda, bu sayfanın <code>&lt;includeonly&gt;</code> etiketleri arasındaki içerik düzenleme kutusuna hazır olarak gelir. Sayfanın kendisi görüntülendiğinde yalnızca bu açıklama görünür.
+
+Not: İmza ve tarih işaretleri (<code><nowiki>~~~</nowiki></code>, <code><nowiki>~~~~~</nowiki></code>) bu sayfa kaydedilirken imzaya dönüşmesin diye araya boş <code>&lt;noinclude&gt;&lt;/noinclude&gt;</code> etiketleri konularak yazılmıştır. Bu etiketleri silmeyin.
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]
+</noinclude>

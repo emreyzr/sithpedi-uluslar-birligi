@@ -1,0 +1,7 @@
+<templatestyles src="Şablon:SUB Portal/stil.css" /><div class="sub-oylama">
+'''[[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] — yeni talep'''
+* Talep açma yetkisi yalnızca üye ulusların [[Portal:Sithpedi Uluslar Birliği/Delegeler|delegelerine]] aittir.
+* Şablondaki <code>ulus</code> ve <code>komite</code> alanlarını doldurun. <code>açan</code> ve <code>tarih</code> alanları kaydettiğinizde kendiliğinden imzanıza ve tarihe dönüşür.
+* Bu sayfada zaten bir talep varsa geri dönüp farklı bir başlık seçin.
+* Ayrıntılar için: [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]]
+</div>

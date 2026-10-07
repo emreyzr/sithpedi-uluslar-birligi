@@ -1,0 +1,70 @@
+{{MinecraftKonu|iu}}
+Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portalında taleplerin nasıl açılacağını, tartışılacağını, oylanacağını ve kapatılacağını açıklar.
+
+== Talep türleri ==
+{| class="wikitable"
+! Tür !! Ne için kullanılır? !! Başlangıç durumu
+|-
+| {{SUB Tür|değişiklik}} || [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'nde bir maddenin değiştirilmesi, kaldırılması ya da yeni bir madde eklenmesi || {{SUB Durum|tartışmada}}
+|-
+| {{SUB Tür|oylama}} || Birliğin bir karar alması (yol inşası, ortak alan, ticaret kuralı, yeni üye kabulü vb.) || {{SUB Durum|oylamada}}
+|-
+| {{SUB Tür|tartışma}} || Karar gerektirmeyen görüş alışverişi, öneri toplama, duyuru || {{SUB Durum|tartışmada}}
+|}
+
+== Kimler talep açabilir? ==
+* Talep açma ve kapatma yetkisi yalnızca üye ulusların [[Portal:Sithpedi Uluslar Birliği/Delegeler|delegelerine]] aittir.
+* Delege olmayan oyuncular açık taleplere '''görüş''' yazabilir. Oyuncu başına yapılan oylamalarda oy da kullanabilirler.
+* Viki bu kuralı teknik olarak denetleyemez; kural güvene dayanır. Delege olmayan biri tarafından açılan talepler herhangi bir delege tarafından '''geri çekildi''' durumuna alınarak kapatılabilir.
+
+== Talep nasıl açılır? ==
+# [[Portal:Sithpedi Uluslar Birliği#Yeni talep aç|Portal sayfasındaki]] ilgili kutuya talebin kısa ve açıklayıcı başlığını yazın, ardından düğmeye tıklayın.
+# Açılan düzenleme sayfasında şablon hazır gelir. <code>ulus</code> ve <code>komite</code> alanlarını doldurun, ardından başlıkların altına talebinizi yazın.
+# Sayfayı kaydedin. Talebiniz portaldaki ''Açık talepler'' listesinde kendiliğinden görünür.
+
+Başlık benzersiz olmalıdır. Aynı başlıkta bir talep zaten varsa düğme, yeni bir sayfa yerine o talebi açar. Böyle bir durumda geri dönüp başlığı değiştirin (örneğin sonuna yılı ekleyin).
+
+== Görüş bildirme ==
+* Görüşünüzü ilgili başlığın altına, satır başına <code>:</code> koyarak ve sonuna imzanızı (<code><nowiki>~~~~</nowiki></code>) ekleyerek yazın. Bir görüşe yanıt verirken bir <code>:</code> daha ekleyin.
+* Yeni bir alt konu açmak için talep kutusundaki '''+ Yeni görüş başlığı ekle''' bağlantısını kullanın.
+* Başkalarının görüşlerini değiştirmeyin ve silmeyin.
+
+== Oylama ==
+* '''Oy usulü ve gerekli çoğunluk''' talebi açan delege tarafından {{tl|SUB Oylama}} şablonunda belirlenir:
+** <code>oylama = ulus</code>: Her üye ulus, delegelerinden biri aracılığıyla '''tek''' oy kullanır. Bir ulus adına birden fazla oy verilirse yalnızca '''ilk''' oy sayılır.
+** <code>oylama = oyuncu</code>: Birliğe üye ulusların her oyuncusu kendi adına '''bir kez''' oy kullanır.
+** <code>eşik = salt</code>: Evet oyları hayır oylarından fazla olmalıdır.
+** <code>eşik = üçte iki</code>: Evet oyları, geçerli oyların (evet + hayır) en az üçte ikisi olmalıdır.
+** <code>eşik = oybirliği</code>: Hiç hayır oyu olmamalıdır.
+** Çekimser oylar çoğunluk hesabına katılmaz.
+* Oy usulü ve eşik, oylama başladıktan sonra değiştirilemez.
+* Değişiklik önerileri önce tartışılır. Tartışma tamamlanınca talebi açan delege <code>durum</code> alanını <code>oylamada</code> yapar ve oylamanın bitiş tarihini (<code>bitiş</code>) yazar. Oylama süresinin en az '''7 gün''' olması önerilir.
+* Oy vermek için ''Evet'', ''Hayır'' veya ''Çekimser'' başlığının '''değiştir''' bağlantısına tıklayın ve yeni bir satıra <code># Ulus adı – <nowiki>~~~~</nowiki></code> (oyuncu oylamasında <code># <nowiki>~~~~</nowiki></code>) yazın.
+
+== Talep nasıl kapatılır? ==
+Oylama süresi dolduğunda ya da tartışma sonuçlandığında herhangi bir delege talebi kapatabilir. Talebi açan delegenin kendi talebini kapatmaması önerilir.
+# {{tl|SUB Oylama}} şablonundaki <code>evet</code>, <code>hayır</code> ve <code>çekimser</code> alanlarına oy sayılarını yazın. Şablon, gerekli çoğunluğun sağlanıp sağlanmadığını kendisi gösterir.
+# {{tl|SUB Talep}} şablonunda <code>durum</code> alanını sonuca göre değiştirin: <code>kabul</code>, <code>ret</code>, <code>kapandı</code> (sonuçlanan tartışmalar için) ya da <code>geri çekildi</code>.
+# <code>kapatan</code> alanına <code><nowiki>~~~</nowiki></code>, <code>kapanış</code> alanına <code><nowiki>~~~~~</nowiki></code> yazın ve <code>sonuç</code> alanına kısa bir özet ekleyin.
+# Kabul edilen bir değişiklik önerisi, kapatan delege tarafından [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'ne işlenir. Değişiklik, bildirgenin ''Değişiklik geçmişi'' bölümünde kendiliğinden listelenir.
+
+Kapanmış talepler arşiv niteliğindedir ve değiştirilmemelidir.
+
+== Durumlar ==
+{| class="wikitable"
+! Durum !! <code>durum</code> değeri !! Anlamı
+|-
+| {{SUB Durum|tartışmada}} || <code>tartışmada</code> || Talep görüşülüyor.
+|-
+| {{SUB Durum|oylamada}} || <code>oylamada</code> || Oylama sürüyor.
+|-
+| {{SUB Durum|kabul}} || <code>kabul</code> || Gerekli çoğunlukla kabul edildi.
+|-
+| {{SUB Durum|ret}} || <code>ret</code> || Gerekli çoğunluk sağlanamadı.
+|-
+| {{SUB Durum|kapandı}} || <code>kapandı</code> || Tartışma sonuçlandı (oylama gerektirmeyen talepler).
+|-
+| {{SUB Durum|geri çekildi}} || <code>geri çekildi</code> || Talep, açan tarafından geri çekildi ya da yönergeye aykırı olduğu için kapatıldı.
+|}
+
+[[Kategori:Sithpedi Uluslar Birliği]]

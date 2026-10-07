@@ -1,0 +1,13 @@
+<includeonly>{{#switch: {{lc:{{{1|}}}}}
+ | tartışmada | tartışma | açık = tartismada
+ | oylamada | oylama = oylamada
+ | kabul | kabul edildi | onaylandı = kabul
+ | ret | reddedildi = ret
+ | kapandı | kapalı | sonuçlandı = kapandi
+ | geri çekildi | geri = geri
+ | #default =
+}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+{{tl|SUB Durum}} ve {{tl|SUB Talep}} şablonlarının kullandığı yardımcı şablondur. Yazılan durum değerini sabit bir anahtara çevirir (<code>tartismada</code>, <code>oylamada</code>, <code>kabul</code>, <code>ret</code>, <code>kapandi</code>, <code>geri</code>). Tanınmayan değerler için boş sonuç döndürür.
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

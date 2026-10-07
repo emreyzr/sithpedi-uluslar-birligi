@@ -1,0 +1,53 @@
+{{MinecraftKonu|iu}}
+'''Delegeler''', [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nde üye ulusları temsil eden oyunculardır. [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]] uyarınca Birlik portalında '''talep açma''' ve '''talep kapatma''' yetkisi yalnızca delegelere aittir. Ulus başına yapılan oylamalarda her ulusun oyunu delegelerinden biri kullanır.
+
+Aşağıdaki liste, 3 Ağustos 2026 tarihli kuruluş toplantısının katılımcılarına göre hazırlanmıştır. Her ulus kendi delegelerini bu tabloyu düzenleyerek güncelleyebilir; değişikliği, ulusun mevcut delegelerinden biri yapmalıdır.
+
+<onlyinclude><templatestyles src="Şablon:SUB Portal/stil.css" />
+{| class="wikitable" style="width:100%;"
+! Ulus !! Delegeler
+|-
+| [[Kan ve Demir İmparatorluğu]] || Demir Şansölye [[Emre]]
+|-
+| [[Antik Roma İmparatorluğu]] || İmparator Narkeus · İmparatoriçe Meiche
+|-
+| [[Ütopya]] || [[Soke]] · GiresunPasasi
+|-
+| [[Babiller]] || Ziara · Horizon · Kuskulu
+|-
+| [[Güneş Kağanlığı]] || Darth Supreme
+|-
+| [[Doğru Köyü]] || ''Henüz belirlenmedi''
+|}</onlyinclude>
+
+== Viki hesapları ==
+Talepler ve oylar viki imzasıyla (<code><nowiki>~~~~</nowiki></code>) verildiği için delegelerin hangi viki hesabını kullandığının bilinmesi gerekir. Delegeler, aşağıdaki tabloya kendi viki kullanıcı adlarını ekleyebilir.
+
+{| class="wikitable"
+! Delege !! Ulus !! Viki kullanıcı adı
+|-
+| Emre || Kan ve Demir İmparatorluğu || 
+|-
+| Narkeus || Antik Roma İmparatorluğu || 
+|-
+| Meiche || Antik Roma İmparatorluğu || 
+|-
+| Soke || Ütopya || 
+|-
+| GiresunPasasi || Ütopya || 
+|-
+| Ziara || Babiller || 
+|-
+| Horizon || Babiller || 
+|-
+| Kuskulu || Babiller || 
+|-
+| Darth Supreme || Güneş Kağanlığı || 
+|}
+
+== Yeni üye ulus ==
+Birliğe yeni bir ulus katıldığında:
+# Ulus bu tabloya ve [[Portal:Sithpedi Uluslar Birliği|portal]] sayfasındaki ''Üye uluslar'' kutusuna eklenir.
+# Ulusun adı, talepleri doğrulayan {{tl|SUB Üye ulus}} şablonuna eklenir.
+
+[[Kategori:Sithpedi Uluslar Birliği]]

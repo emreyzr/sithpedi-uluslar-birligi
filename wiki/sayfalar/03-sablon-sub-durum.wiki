@@ -1,0 +1,32 @@
+<includeonly><templatestyles src="Şablon:SUB Portal/stil.css" />{{#switch: {{SUB Durum/anahtar|{{{1|}}}}}
+ | tartismada = <span class="sub-rozet sub-rozet-tartismada">Tartışmada</span>
+ | oylamada = <span class="sub-rozet sub-rozet-oylamada">Oylamada</span>
+ | kabul = <span class="sub-rozet sub-rozet-kabul">Kabul edildi</span>
+ | ret = <span class="sub-rozet sub-rozet-ret">Reddedildi</span>
+ | kapandi = <span class="sub-rozet sub-rozet-kapandi">Kapandı</span>
+ | geri = <span class="sub-rozet sub-rozet-geri">Geri çekildi</span>
+ | #default = <span class="sub-rozet">{{#if:{{{1|}}}|{{{1}}}|Belirtilmedi}}</span>
+}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+Bir [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] talebinin durumunu renkli bir rozet olarak gösterir.
+
+== Kullanımı ==
+<code><nowiki>{{SUB Durum|durum}}</nowiki></code>
+
+{| class="wikitable"
+! Yazılan değer !! Görünüm !! Talep açık mı?
+|-
+| <code>tartışmada</code> || {{SUB Durum|tartışmada}} || Açık
+|-
+| <code>oylamada</code> || {{SUB Durum|oylamada}} || Açık
+|-
+| <code>kabul</code> || {{SUB Durum|kabul}} || Kapalı
+|-
+| <code>ret</code> || {{SUB Durum|ret}} || Kapalı
+|-
+| <code>kapandı</code> || {{SUB Durum|kapandı}} || Kapalı
+|-
+| <code>geri çekildi</code> || {{SUB Durum|geri çekildi}} || Kapalı
+|}
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

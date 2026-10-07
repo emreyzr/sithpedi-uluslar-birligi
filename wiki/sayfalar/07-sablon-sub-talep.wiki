@@ -1,0 +1,90 @@
+<includeonly><templatestyles src="Şablon:SUB Portal/stil.css" />__NEWSECTIONLINK__
+<div class="sub-talep sub-talep-{{SUB Tür|{{{tür|}}}|anahtar}}">
+<div class="sub-talep-ust"><span>[[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] › [[Portal:Sithpedi Uluslar Birliği#Talepler|Talepler]]</span><span>{{SUB Tür|{{{tür|}}}}} {{SUB Durum|{{{durum|}}}}}</span></div>
+<div class="sub-talep-govde">
+<div class="sub-talep-alan"><span class="sub-talep-etiket">Açan delege</span>{{#if:{{{açan|}}}|{{{açan}}}|—}}</div>
+<div class="sub-talep-alan"><span class="sub-talep-etiket">Temsil ettiği ulus</span>{{#if:{{SUB Üye ulus|{{{ulus|}}}}}|{{SUB Üye ulus|{{{ulus|}}}|bağlantı}}|{{#if:{{{ulus|}}}|{{{ulus}}}|—}}}}</div>
+<div class="sub-talep-alan"><span class="sub-talep-etiket">Açılış tarihi</span>{{#if:{{{tarih|}}}|{{{tarih}}}|—}}</div>
+<div class="sub-talep-alan"><span class="sub-talep-etiket">İlgili komite</span>{{SUB Komite|{{{komite|}}}}}</div>{{#if:{{{madde|}}}|
+<div class="sub-talep-alan"><span class="sub-talep-etiket">Değiştirilen madde</span>[[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|{{{madde}}}]]</div>}}
+</div>{{#if:{{SUB Üye ulus|{{{ulus|}}}}}||
+<div class="sub-talep-uyari">'''Uyarı:''' Bu talepte geçerli bir üye ulus belirtilmemiş. Talepler yalnızca üye ulusların [[Portal:Sithpedi Uluslar Birliği/Delegeler|delegeleri]] tarafından açılabilir. Talebi açan delege, <code>ulus</code> alanına temsil ettiği ulusu yazmalıdır.</div>}}{{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}
+| kabul | ret | kapandi | geri =
+<div class="sub-talep-sonuc {{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}|kabul=|ret=sub-talep-sonuc-ret|#default=sub-talep-sonuc-notr}}">'''Bu talep kapanmıştır''' — {{SUB Durum|{{{durum|}}}}}{{#if:{{{kapatan|}}}|&#32;· Kapatan: {{{kapatan}}}}}{{#if:{{{kapanış|}}}|&#32;· {{{kapanış}}}}}{{#if:{{{sonuç|}}}|<br />'''Sonuç:''' {{{sonuç}}}}}<br /><span class="sub-not">Kapanmış talepler arşiv niteliğindedir; lütfen değiştirmeyin. Konuyu yeniden gündeme getirmek için yeni bir talep açın.</span></div>
+| #default =
+}}
+<div class="sub-talep-alt"><span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit&section=new}} '''+ Yeni görüş başlığı ekle''']</span> · [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]] · [[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]] · [[Portal:Sithpedi Uluslar Birliği|Portala dön]]</div>
+</div>
+{{#ifeq:{{NAMESPACE}}{{#titleparts:{{PAGENAME}}|2}}|Portal:Sithpedi Uluslar Birliği/Talepler|[[Kategori:Sithpedi Uluslar Birliği talepleri]]{{#switch:{{SUB Tür|{{{tür|}}}|anahtar}}
+| degisiklik = [[Kategori:Sithpedi Uluslar Birliği değişiklik önerileri]]
+| oylama = [[Kategori:Sithpedi Uluslar Birliği oylamaları]]
+| tartisma = [[Kategori:Sithpedi Uluslar Birliği tartışmaları]]
+| #default =
+}}{{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}
+| tartismada | oylamada = [[Kategori:Sithpedi Uluslar Birliği açık talepleri]]
+| kabul = [[Kategori:Sithpedi Uluslar Birliği kapalı talepleri]][[Kategori:Sithpedi Uluslar Birliği kabul edilen talepleri]]
+| ret | kapandi | geri = [[Kategori:Sithpedi Uluslar Birliği kapalı talepleri]]
+| #default = [[Kategori:Sithpedi Uluslar Birliği durumu belirsiz talepleri]]
+}}}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+Bu şablon, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portalında açılan her talebin (değişiklik önerisi, oylama veya tartışma) en üstünde yer alır. Talebin türünü, durumunu, açan delegeyi ve ilgili komiteyi gösterir; talebi doğru kategorilere ekleyerek portaldaki listelerde görünmesini sağlar.
+
+Bu şablonu elle eklemenize gerek yoktur: portaldaki "Yeni talep aç" kutularından biriyle sayfa oluşturduğunuzda şablon hazır gelir.
+
+Şablon yalnızca <code>Portal:Sithpedi Uluslar Birliği/Talepler/…</code> adlı sayfalarda kategori ekler; bu sayede örnek ve belgeleme sayfaları listelere karışmaz.
+
+== Parametreler ==
+{| class="wikitable"
+! Parametre !! Açıklama !! Örnek
+|-
+| <code>tür</code> || Talebin türü: <code>değişiklik</code>, <code>oylama</code> veya <code>tartışma</code> || <code>oylama</code>
+|-
+| <code>durum</code> || <code>tartışmada</code>, <code>oylamada</code>, <code>kabul</code>, <code>ret</code>, <code>kapandı</code> veya <code>geri çekildi</code> (bkz. {{tl|SUB Durum}}) || <code>tartışmada</code>
+|-
+| <code>açan</code> || Talebi açan delegenin imzası. Ön yüklemede <code><nowiki>~~~</nowiki></code> olarak gelir. || <code><nowiki>~~~</nowiki></code>
+|-
+| <code>ulus</code> || Açan delegenin temsil ettiği üye ulus (bkz. {{tl|SUB Üye ulus}}) || <code>Babiller</code>
+|-
+| <code>tarih</code> || Açılış tarihi. Ön yüklemede <code><nowiki>~~~~~</nowiki></code> olarak gelir. || <code><nowiki>~~~~~</nowiki></code>
+|-
+| <code>komite</code> || İlgili komite: <code>güvenlik</code>, <code>ulaştırma</code>, <code>ortak alan</code>, <code>ticaret</code>, <code>tarih</code> veya <code>genel</code> (bkz. {{tl|SUB Komite}}) || <code>ulaştırma</code>
+|-
+| <code>madde</code> || ''(Yalnızca değişiklik önerileri)'' Değiştirilmesi önerilen madde || <code>Madde III</code>
+|-
+| <code>kapatan</code> || Talebi kapatan delegenin imzası || <code><nowiki>~~~</nowiki></code>
+|-
+| <code>kapanış</code> || Kapanış tarihi || <code><nowiki>~~~~~</nowiki></code>
+|-
+| <code>sonuç</code> || Kapanış özeti (oylama sonucu, varılan karar vb.) || <code>4 evet, 1 hayır ile kabul edildi.</code>
+|}
+
+== Örnek ==
+<pre>
+{{SUB Talep
+| tür     = değişiklik
+| durum   = tartışmada
+| açan    = [[Kullanıcı:Örnek|Örnek]]
+| ulus    = Kan ve Demir İmparatorluğu
+| tarih   = 7 Ekim 2026
+| komite  = ulaştırma
+| madde   = Madde II
+}}
+</pre>
+{{SUB Talep
+| tür     = değişiklik
+| durum   = tartışmada
+| açan    = [[Kullanıcı:Örnek|Örnek]]
+| ulus    = Kan ve Demir İmparatorluğu
+| tarih   = 7 Ekim 2026
+| komite  = ulaştırma
+| madde   = Madde II
+}}
+
+== Eklediği kategoriler ==
+* [[:Kategori:Sithpedi Uluslar Birliği talepleri]] (tüm talepler)
+* [[:Kategori:Sithpedi Uluslar Birliği açık talepleri]] / [[:Kategori:Sithpedi Uluslar Birliği kapalı talepleri]]
+* [[:Kategori:Sithpedi Uluslar Birliği kabul edilen talepleri]]
+* [[:Kategori:Sithpedi Uluslar Birliği değişiklik önerileri]] / [[:Kategori:Sithpedi Uluslar Birliği oylamaları]] / [[:Kategori:Sithpedi Uluslar Birliği tartışmaları]]
+* [[:Kategori:Sithpedi Uluslar Birliği durumu belirsiz talepleri]] (durum alanı tanınmadığında)
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

@@ -1,0 +1,26 @@
+<includeonly>{{#switch: {{{1|}}}
+ | Kan ve Demir İmparatorluğu
+ | Kan ve Demir
+ | KvD = {{#if:{{{2|}}}|[[Kan ve Demir İmparatorluğu]]|Kan ve Demir İmparatorluğu}}
+ | Antik Roma İmparatorluğu
+ | Roma İmparatorluğu
+ | Roma = {{#if:{{{2|}}}|[[Antik Roma İmparatorluğu]]|Antik Roma İmparatorluğu}}
+ | Ütopya
+ | Ütopya Komünü = {{#if:{{{2|}}}|[[Ütopya]]|Ütopya}}
+ | Babiller = {{#if:{{{2|}}}|[[Babiller]]|Babiller}}
+ | Güneş Kağanlığı = {{#if:{{{2|}}}|[[Güneş Kağanlığı]]|Güneş Kağanlığı}}
+ | Doğru Köyü
+ | Doğru Köy = {{#if:{{{2|}}}|[[Doğru Köyü]]|Doğru Köyü}}
+ | #default =
+}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+Bu şablon, verilen adın [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nin üye uluslarından biri olup olmadığını denetler. Ad bir üyeye aitse ulusun resmî adını, değilse boş sonuç döndürür. {{tl|SUB Talep}} şablonu, talebi açan ulusu doğrulamak için bu şablonu kullanır.
+
+Birliğe '''yeni bir ulus katıldığında''' ya da bir ulus ayrıldığında yalnızca bu şablonun güncellenmesi yeterlidir.
+
+== Kullanımı ==
+* <code><nowiki>{{SUB Üye ulus|Babiller}}</nowiki></code> → {{SUB Üye ulus|Babiller}}
+* <code><nowiki>{{SUB Üye ulus|Roma|bağlantı}}</nowiki></code> → {{SUB Üye ulus|Roma|bağlantı}}
+* <code><nowiki>{{SUB Üye ulus|Atlantis}}</nowiki></code> → ''(boş)''
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

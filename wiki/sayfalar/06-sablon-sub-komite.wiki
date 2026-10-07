@@ -1,0 +1,30 @@
+<includeonly>{{#switch: {{lc:{{{1|}}}}}
+ | güvenlik | güvenlik konseyi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde I: Güvenlik Konseyi|Güvenlik Konseyi]]
+ | ulaştırma | altyapı | ulaştırma ve altyapı | ulaştırma ve altyapı komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde II: Ulaştırma ve Altyapı Komitesi|Ulaştırma ve Altyapı Komitesi]]
+ | ortak alan | ortak alan komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde III: Ortak Alan Komitesi|Ortak Alan Komitesi]]
+ | ticaret | işbirliği | ticaret ve işbirliği | ticaret ve işbirliği komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde IV: Ticaret ve İşbirliği Komitesi|Ticaret ve İşbirliği Komitesi]]
+ | tarih | tarih araştırma | sithpedi tarihini araştırma komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde V: Sithpedi Tarihini Araştırma Komitesi|Sithpedi Tarihini Araştırma Komitesi]]
+ | genel | genel kurul | = Genel Kurul (tüm üyeler)
+ | #default = {{{1}}}
+}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+Bir talebin ilgili olduğu komiteyi, [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'ndeki maddesine bağlantı vererek gösterir.
+
+== Kullanımı ==
+{| class="wikitable"
+! Yazılan değer !! Görünüm
+|-
+| <code>güvenlik</code> || {{SUB Komite|güvenlik}}
+|-
+| <code>ulaştırma</code> || {{SUB Komite|ulaştırma}}
+|-
+| <code>ortak alan</code> || {{SUB Komite|ortak alan}}
+|-
+| <code>ticaret</code> || {{SUB Komite|ticaret}}
+|-
+| <code>tarih</code> || {{SUB Komite|tarih}}
+|-
+| <code>genel</code> veya boş || {{SUB Komite|genel}}
+|}
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

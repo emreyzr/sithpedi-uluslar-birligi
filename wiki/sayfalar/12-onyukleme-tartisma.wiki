@@ -1,0 +1,26 @@
+<includeonly>{{SUB Talep
+| tür     = tartışma
+| durum   = tartışmada
+| açan    = ~~<noinclude></noinclude>~
+| ulus    = <!-- Temsil ettiğiniz ulus: Kan ve Demir İmparatorluğu, Antik Roma İmparatorluğu, Ütopya, Babiller, Güneş Kağanlığı veya Doğru Köyü -->
+| tarih   = ~~<noinclude></noinclude>~~<noinclude></noinclude>~
+| komite  = <!-- güvenlik, ulaştırma, ortak alan, ticaret, tarih veya genel -->
+| kapatan = <!-- Talep kapanırken doldurulur -->
+| kapanış = <!-- Talep kapanırken doldurulur -->
+| sonuç   = <!-- Talep kapanırken doldurulur -->
+}}
+<!-- Gri açıklama satırlarını kaydetmeden önce silebilirsiniz. -->
+== Konu ==
+<!-- Tartışmaya açmak istediğiniz konuyu anlatın ve sonuna imzanızı ekleyin. -->
+
+~~<noinclude></noinclude>~~
+
+== Görüşler ==
+:''Görüşlerinizi bu başlığın altına, girintili (<code>:</code>) olarak ve imzanızla ekleyin. Yeni bir alt konu açmak için üstteki "Yeni görüş başlığı ekle" bağlantısını kullanın. Tartışma bir karara bağlanacaksa ayrı bir oylama talebi açın.''</includeonly><noinclude>
+== Ön yükleme şablonu ==
+Bu sayfa bir '''ön yükleme (preload) şablonudur'''. [[Portal:Sithpedi Uluslar Birliği|Portal]] sayfasındaki "Tartışma" kutusuyla yeni bir talep oluşturulduğunda, bu sayfanın <code>&lt;includeonly&gt;</code> etiketleri arasındaki içerik düzenleme kutusuna hazır olarak gelir. Sayfanın kendisi görüntülendiğinde yalnızca bu açıklama görünür.
+
+Not: İmza ve tarih işaretleri (<code><nowiki>~~~</nowiki></code>, <code><nowiki>~~~~~</nowiki></code>) bu sayfa kaydedilirken imzaya dönüşmesin diye araya boş <code>&lt;noinclude&gt;&lt;/noinclude&gt;</code> etiketleri konularak yazılmıştır. Bu etiketleri silmeyin.
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]
+</noinclude>

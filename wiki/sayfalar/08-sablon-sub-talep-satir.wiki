@@ -1,0 +1,12 @@
+<includeonly>
+{{!}}-
+{{!}} [[{{{%PAGE%|}}}|{{#titleparts:{{{%PAGE%|}}}|0|3}}]]<br /><span class="sub-not">{{#if:{{{açan|}}}|{{{açan}}}|—}}{{#if:{{{tarih|}}}|&#32;· {{{tarih}}}}}</span>
+{{!}} {{SUB Tür|{{{tür|}}}}}
+{{!}} {{SUB Durum|{{{durum|}}}}}
+{{!}} {{#if:{{SUB Üye ulus|{{{ulus|}}}}}|{{SUB Üye ulus|{{{ulus|}}}|bağlantı}}|—}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+Bu şablon doğrudan kullanılmaz. [[Portal:Sithpedi Uluslar Birliği|Portal]] sayfasındaki talep listeleri (DynamicPageList3), her talep sayfasındaki {{tl|SUB Talep}} şablonunun parametrelerini bu şablona aktararak tablo satırları üretir.
+
+Sütunlar: Talep (altında açan delege ve açılış tarihi) · Tür · Durum · Ulus
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

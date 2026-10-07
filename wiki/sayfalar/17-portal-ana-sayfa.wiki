@@ -1,0 +1,160 @@
+__NOTOC__ __NOEDITSECTION__
+<templatestyles src="Şablon:SUB Portal/stil.css" />
+<div class="sub-portal">
+<div class="sub-banner">
+{{#ifexist:Dosya:Sithpedi Uluslar Birliği bayrağı.png|[[Dosya:Sithpedi Uluslar Birliği bayrağı.png|120px|link=Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Sithpedi Uluslar Birliği bayrağı]]}}
+<div class="sub-banner-baslik">Sithpedi Uluslar Birliği</div>
+<div class="sub-banner-alt">"[[Kralın Vasiyeti]]'nin Işığında, Yeni Bir Çağın Şafağında…"</div>
+<div class="sub-banner-bilgi">Kuruluş: 3 Ağustos 2026 · Atatürk Orman Çiftliği · [[Sithpedi Minecraft Etkinlikleri#Sithpedi Minecraft Forever|Sithpedi ''Minecraft'' Forever]]</div>
+</div>
+<div class="sub-menu">
+<span class="sub-menu-oge">[[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]</span>
+<span class="sub-menu-oge">[[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]]</span>
+<span class="sub-menu-oge">[[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]]</span>
+<span class="sub-menu-oge">[[#Yeni talep aç|Yeni talep aç]]</span>
+<span class="sub-menu-oge">[[:Kategori:Sithpedi Uluslar Birliği talepleri|Tüm talepler]]</span>
+</div>
+<div class="sub-istatistik">
+<div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">6</div><div class="sub-istatistik-etiket">Üye ulus</div></div>
+<div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{PAGESINCATEGORY:Sithpedi Uluslar Birliği açık talepleri|pages}}</div><div class="sub-istatistik-etiket">[[:Kategori:Sithpedi Uluslar Birliği açık talepleri|Açık talep]]</div></div>
+<div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{PAGESINCATEGORY:Sithpedi Uluslar Birliği kabul edilen talepleri|pages}}</div><div class="sub-istatistik-etiket">[[:Kategori:Sithpedi Uluslar Birliği kabul edilen talepleri|Kabul edilen]]</div></div>
+<div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{PAGESINCATEGORY:Sithpedi Uluslar Birliği talepleri|pages}}</div><div class="sub-istatistik-etiket">[[:Kategori:Sithpedi Uluslar Birliği talepleri|Toplam talep]]</div></div>
+</div>
+{{#ifexpr:{{PAGESINCATEGORY:Sithpedi Uluslar Birliği durumu belirsiz talepleri|pages|R}} > 0|<div class="sub-talep-uyari" style="margin-bottom:16px; border:1px solid #fc3; border-radius:6px;">'''Dikkat:''' {{PAGESINCATEGORY:Sithpedi Uluslar Birliği durumu belirsiz talepleri|pages}} talebin <code>durum</code> alanı tanınmıyor; bu talepler listelerde görünmez. [[:Kategori:Sithpedi Uluslar Birliği durumu belirsiz talepleri|Talepleri görüntüleyip düzeltin]].</div>}}
+<div class="sub-sutunlar">
+<div class="sub-sutun-ana">
+<div class="sub-kutu">
+<div class="sub-kutu-baslik">Sithpedi Uluslar Birliği nedir?</div>
+<div class="sub-kutu-icerik">
+'''Sithpedi Uluslar Birliği''', [[Sithpedi Minecraft Etkinlikleri#Sithpedi Minecraft Forever|Sithpedi ''Minecraft'' Forever]] dünyasındaki bağımsız ulusların 3 Ağustos 2026'da Atatürk Orman Çiftliği'nde kurduğu ittifaktır. Birlik, [[Kralın Vasiyeti]] ile sona eren tek taçlı krallık döneminin ardından, ulusların bağımsızlıklarını koruyarak diyarın ortak refahı için birlikte çalışmasını amaçlar. Birliğin kurucu belgesi, [[Kan ve Demir İmparatorluğu]]'ndan Demir Şansölye [[Emre]] tarafından hazırlanıp sunulan [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'dir.
+
+Bu portal, Birliğin '''forumu''' olarak işlev görür. Üye ulusların delegeleri buradan bildirgede '''değişiklik önerebilir''', Birlik kararlarını '''oylamaya''' sunabilir ve '''tartışma''' başlatabilir. Bütün talepler aşağıdaki listelerde kendiliğinden görünür.
+</div>
+</div>
+<div class="sub-kutu">
+<div class="sub-kutu-baslik"><span id="Yeni_talep_aç"></span>Yeni talep aç</div>
+<div class="sub-kutu-icerik">
+<div class="sub-not" style="margin-bottom:8px;">Talep açma yetkisi yalnızca üye ulusların [[Portal:Sithpedi Uluslar Birliği/Delegeler|delegelerine]] aittir. Talebin kısa ve açıklayıcı başlığını yazıp düğmeye tıklayın; hazır şablonla bir düzenleme sayfası açılacaktır. Ayrıntılar için [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|talep yönergesine]] bakın.</div>
+<div class="sub-formlar">
+<div class="sub-form sub-form-degisiklik">
+<div class="sub-form-baslik">Değişiklik önerisi</div>
+<div class="sub-form-aciklama">Kuruluş Bildirgesi'nde bir maddeyi değiştirmek ya da yeni madde eklemek için.</div>
+<inputbox>
+type=create
+width=22
+prefix=Portal:Sithpedi Uluslar Birliği/Talepler/
+preload=Şablon:SUB Talep/önyükleme/Değişiklik önerisi
+editintro=Portal:Sithpedi Uluslar Birliği/Talep yönergesi/Düzenleme notu
+placeholder=Örn. Madde III'e pazar yeri eklenmesi
+buttonlabel=Öneri aç
+</inputbox>
+</div>
+<div class="sub-form sub-form-oylama">
+<div class="sub-form-baslik">Oylama</div>
+<div class="sub-form-aciklama">Birliğin bir karar alması için. Oy usulü (ulus/oyuncu) ve gerekli çoğunluk sayfada seçilir.</div>
+<inputbox>
+type=create
+width=22
+prefix=Portal:Sithpedi Uluslar Birliği/Talepler/
+preload=Şablon:SUB Talep/önyükleme/Oylama
+editintro=Portal:Sithpedi Uluslar Birliği/Talep yönergesi/Düzenleme notu
+placeholder=Örn. Kuzeybatı Yolu'na köprü yapılması
+buttonlabel=Oylama aç
+</inputbox>
+</div>
+<div class="sub-form sub-form-tartisma">
+<div class="sub-form-baslik">Tartışma</div>
+<div class="sub-form-aciklama">Karar gerektirmeyen görüş alışverişi, öneri toplama ya da duyuru için.</div>
+<inputbox>
+type=create
+width=22
+prefix=Portal:Sithpedi Uluslar Birliği/Talepler/
+preload=Şablon:SUB Talep/önyükleme/Tartışma
+editintro=Portal:Sithpedi Uluslar Birliği/Talep yönergesi/Düzenleme notu
+placeholder=Örn. Ortak pazar için yer önerileri
+buttonlabel=Tartışma aç
+</inputbox>
+</div>
+</div>
+</div>
+</div>
+<div class="sub-kutu">
+<div class="sub-kutu-baslik"><span id="Talepler"></span>Açık talepler</div>
+<div class="sub-kutu-icerik">
+<dpl>
+notnamespace = Kategori
+category = Sithpedi Uluslar Birliği açık talepleri
+ordermethod = firstedit
+order = descending
+include = {SUB Talep¦SUB Talep/satır}
+format = {¦ class="wikitable sortable"\n! Talep !! Tür !! Durum !! Ulus,,,\n¦}
+noresultsheader = ''Şu anda açık talep bulunmamaktadır. [[#Yeni talep aç|Yeni bir talep açın.]]''
+</dpl>
+</div>
+</div>
+<div class="sub-kutu">
+<div class="sub-kutu-baslik"><span id="Kapanan_talepler"></span>Son kapanan talepler</div>
+<div class="sub-kutu-icerik">
+<dpl>
+notnamespace = Kategori
+category = Sithpedi Uluslar Birliği kapalı talepleri
+ordermethod = lastedit
+order = descending
+count = 10
+include = {SUB Talep¦SUB Talep/satır}
+format = {¦ class="wikitable sortable"\n! Talep !! Tür !! Durum !! Ulus,,,\n¦}
+noresultsheader = ''Henüz kapanmış bir talep bulunmamaktadır.''
+</dpl>
+<div class="sub-not">Son değiştirilen 10 talep gösterilmektedir. Tamamı için: [[:Kategori:Sithpedi Uluslar Birliği kapalı talepleri|kapanmış talepler arşivi]].</div>
+</div>
+</div>
+</div>
+<div class="sub-sutun-yan">
+<div class="sub-kutu">
+<div class="sub-kutu-baslik">Üye uluslar</div>
+<div class="sub-kutu-icerik">
+* [[Kan ve Demir İmparatorluğu]]
+* [[Antik Roma İmparatorluğu]]
+* [[Ütopya]]
+* [[Babiller]]
+* [[Güneş Kağanlığı]]
+* [[Doğru Köyü]]
+<div class="sub-not">Altı kurucu ulus, 3 Ağustos 2026.</div>
+</div>
+</div>
+<div class="sub-kutu">
+<div class="sub-kutu-baslik">Komiteler</div>
+<div class="sub-kutu-icerik">
+; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde I: Güvenlik Konseyi|I. Güvenlik Konseyi]]
+: Uluslar arasındaki çatışmaların kılıç çekilmeden, masa başında çözülmesi.
+; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde II: Ulaştırma ve Altyapı Komitesi|II. Ulaştırma ve Altyapı Komitesi]]
+: Uluslar arası yollar, köprüler ve geçitler.
+; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde III: Ortak Alan Komitesi|III. Ortak Alan Komitesi]]
+: Atatürk Orman Çiftliği başta olmak üzere tarafsız toplanma alanları.
+; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde IV: Ticaret ve İşbirliği Komitesi|IV. Ticaret ve İşbirliği Komitesi]]
+: Köylü ticareti, haksız rekabetin önlenmesi, kaynak paylaşımı.
+; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde V: Sithpedi Tarihini Araştırma Komitesi|V. Sithpedi Tarihini Araştırma Komitesi]]
+: Savaşların, barışların ve şaheserlerin kaydı; Sithpedi Külliyatı.
+</div>
+</div>
+<div class="sub-kutu">
+<div class="sub-kutu-baslik">[[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]]</div>
+<div class="sub-kutu-icerik">
+{{:Portal:Sithpedi Uluslar Birliği/Delegeler}}
+</div>
+</div>
+<div class="sub-kutu">
+<div class="sub-kutu-baslik">Bağlantılar</div>
+<div class="sub-kutu-icerik">
+* [[Sithpedi Minecraft Etkinlikleri]]
+* [[Kralın Vasiyeti]]
+* [[Portal:Kingdom of Sithpedi]]
+* [https://harita.sithpedi.com/ Forever dünyası haritası]
+</div>
+</div>
+</div>
+</div>
+</div>
+
+[[Kategori:Sithpedi Uluslar Birliği]]
+[[Kategori:Sithpedi Minecraft]]

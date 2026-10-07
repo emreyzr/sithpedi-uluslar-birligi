@@ -1,0 +1,462 @@
+/*
+ * Sithpedi Uluslar Birliği — ortak stiller
+ * Kullanan şablonlar: SUB Talep, SUB Durum, SUB Oylama ve Portal sayfası.
+ * Bu sayfa TemplateStyles ile yüklenir (<templatestyles src="Şablon:SUB Portal/stil.css" />).
+ */
+
+/* ---------- Portal düzeni ---------- */
+.sub-portal {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.sub-banner {
+	background-color: #1b2a4a;
+	background-image: linear-gradient(135deg, #1b2a4a 0%, #2c4a7c 100%);
+	color: #ffffff;
+	border-bottom: 4px solid #c9a227;
+	border-radius: 6px;
+	padding: 24px 16px 20px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.sub-banner-baslik {
+	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+	font-size: 2.2em;
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+}
+
+.sub-banner-alt {
+	font-style: italic;
+	color: #e8d8a0;
+	margin-top: 6px;
+}
+
+.sub-banner-bilgi {
+	font-size: 0.9em;
+	color: #d0d8e8;
+	margin-top: 10px;
+}
+
+.sub-banner a,
+.sub-banner a:visited {
+	color: #ffe9a8;
+}
+
+.sub-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	margin: 0 0 16px;
+}
+
+.sub-menu-oge {
+	display: inline-block;
+	background-color: #f4f1e6;
+	color: #1b2a4a;
+	border: 1px solid #c9a227;
+	border-radius: 999px;
+	padding: 4px 14px;
+	font-weight: bold;
+	font-size: 0.95em;
+}
+
+.sub-menu-oge a,
+.sub-menu-oge a:visited {
+	color: #1b2a4a;
+}
+
+.sub-istatistik {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.sub-istatistik-kutu {
+	flex: 1 1 140px;
+	background-color: #ffffff;
+	color: #202122;
+	border: 1px solid #c8ccd1;
+	border-top: 4px solid #2c4a7c;
+	border-radius: 6px;
+	padding: 10px;
+	text-align: center;
+}
+
+.sub-istatistik-sayi {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #1b2a4a;
+	line-height: 1.2;
+}
+
+.sub-istatistik-etiket {
+	font-size: 0.85em;
+	color: #54595d;
+}
+
+.sub-sutunlar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	align-items: flex-start;
+}
+
+.sub-sutun-ana {
+	flex: 2 1 480px;
+	min-width: 0;
+}
+
+.sub-sutun-yan {
+	flex: 1 1 280px;
+	min-width: 0;
+}
+
+.sub-kutu {
+	background-color: #ffffff;
+	color: #202122;
+	border: 1px solid #c8ccd1;
+	border-radius: 6px;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+
+.sub-kutu-baslik {
+	background-color: #1b2a4a;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 8px 12px;
+	border-bottom: 3px solid #c9a227;
+}
+
+.sub-kutu-baslik a,
+.sub-kutu-baslik a:visited {
+	color: #ffe9a8;
+}
+
+.sub-kutu-icerik {
+	padding: 10px 12px;
+	overflow-x: auto;
+}
+
+.sub-kutu-icerik > table.wikitable {
+	width: 100%;
+	margin: 0;
+}
+
+.sub-not {
+	font-size: 0.88em;
+	color: #54595d;
+}
+
+/* ---------- Yeni talep formları ---------- */
+.sub-formlar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.sub-form {
+	flex: 1 1 220px;
+	background-color: #f8f9fa;
+	color: #202122;
+	border: 1px solid #c8ccd1;
+	border-left: 5px solid #2c4a7c;
+	border-radius: 4px;
+	padding: 8px 10px;
+}
+
+.sub-form-degisiklik {
+	border-left-color: #8e44ad;
+}
+
+.sub-form-oylama {
+	border-left-color: #c9a227;
+}
+
+.sub-form-tartisma {
+	border-left-color: #2c7a7b;
+}
+
+.sub-form-baslik {
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.sub-form-aciklama {
+	font-size: 0.85em;
+	color: #54595d;
+	margin-bottom: 6px;
+}
+
+/* ---------- Durum rozetleri ---------- */
+.sub-rozet {
+	display: inline-block;
+	border-radius: 999px;
+	padding: 1px 10px;
+	font-size: 0.85em;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #ffffff;
+	background-color: #72777d;
+}
+
+.sub-rozet-tartismada {
+	background-color: #2c6eb5;
+}
+
+.sub-rozet-oylamada {
+	background-color: #b7791f;
+}
+
+.sub-rozet-kabul {
+	background-color: #2f855a;
+}
+
+.sub-rozet-ret {
+	background-color: #c53030;
+}
+
+.sub-rozet-kapandi,
+.sub-rozet-geri {
+	background-color: #72777d;
+}
+
+.sub-rozet-tur {
+	background-color: #e2e8f0;
+	color: #1b2a4a;
+}
+
+/* ---------- Talep başlığı (her talep sayfasının üstü) ---------- */
+.sub-talep {
+	background-color: #ffffff;
+	color: #202122;
+	border: 1px solid #c8ccd1;
+	border-top: 5px solid #2c4a7c;
+	border-radius: 6px;
+	margin: 0 0 16px;
+	overflow: hidden;
+}
+
+.sub-talep-degisiklik {
+	border-top-color: #8e44ad;
+}
+
+.sub-talep-oylama {
+	border-top-color: #c9a227;
+}
+
+.sub-talep-tartisma {
+	border-top-color: #2c7a7b;
+}
+
+.sub-talep-ust {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #eaecf0;
+	padding: 6px 12px;
+	font-size: 0.9em;
+}
+
+.sub-talep-govde {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+}
+
+.sub-talep-alan {
+	flex: 1 1 180px;
+	padding: 8px 12px;
+	border-right: 1px solid #eaecf0;
+	border-bottom: 1px solid #eaecf0;
+}
+
+.sub-talep-etiket {
+	display: block;
+	font-size: 0.78em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #54595d;
+}
+
+.sub-talep-uyari {
+	background-color: #fef6e7;
+	color: #6b4a00;
+	border-top: 1px solid #fc3;
+	padding: 6px 12px;
+	font-size: 0.9em;
+}
+
+.sub-talep-sonuc {
+	background-color: #eef6ee;
+	color: #1d4d2f;
+	border-top: 1px solid #a3d3b1;
+	padding: 8px 12px;
+}
+
+.sub-talep-sonuc-ret {
+	background-color: #fdeeee;
+	color: #6b1d1d;
+	border-top-color: #e5a5a5;
+}
+
+.sub-talep-sonuc-notr {
+	background-color: #f1f2f4;
+	color: #202122;
+	border-top-color: #c8ccd1;
+}
+
+.sub-talep-alt {
+	padding: 6px 12px;
+	font-size: 0.9em;
+	background-color: #f8f9fa;
+	border-top: 1px solid #eaecf0;
+}
+
+/* ---------- Oylama kutusu ---------- */
+.sub-oylama {
+	background-color: #fffaf0;
+	color: #202122;
+	border: 1px solid #e2c66b;
+	border-left: 5px solid #c9a227;
+	border-radius: 4px;
+	padding: 8px 12px;
+	margin: 0 0 12px;
+}
+
+.sub-oylama-baslik {
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.sub-oylama-sayilar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 6px;
+}
+
+.sub-oylama-sayi {
+	background-color: #ffffff;
+	border: 1px solid #c8ccd1;
+	border-radius: 4px;
+	padding: 2px 10px;
+}
+
+/* ---------- Gece modu (Vector 2022 ve Minerva) ---------- */
+@media screen {
+	html.skin-theme-clientpref-night .sub-istatistik-kutu,
+	html.skin-theme-clientpref-night .sub-kutu,
+	html.skin-theme-clientpref-night .sub-talep {
+		background-color: #1f2328;
+		color: #eaecf0;
+		border-color: #54595d;
+	}
+
+	html.skin-theme-clientpref-night .sub-form,
+	html.skin-theme-clientpref-night .sub-talep-ust,
+	html.skin-theme-clientpref-night .sub-talep-alt {
+		background-color: #27292d;
+		color: #eaecf0;
+		border-color: #54595d;
+	}
+
+	html.skin-theme-clientpref-night .sub-talep-alan {
+		border-color: #3a3d42;
+	}
+
+	html.skin-theme-clientpref-night .sub-istatistik-sayi {
+		color: #ffe9a8;
+	}
+
+	html.skin-theme-clientpref-night .sub-not,
+	html.skin-theme-clientpref-night .sub-form-aciklama,
+	html.skin-theme-clientpref-night .sub-talep-etiket,
+	html.skin-theme-clientpref-night .sub-istatistik-etiket {
+		color: #a2a9b1;
+	}
+
+	html.skin-theme-clientpref-night .sub-oylama {
+		background-color: #2d2716;
+		color: #eaecf0;
+	}
+
+	html.skin-theme-clientpref-night .sub-oylama-sayi {
+		background-color: #1f2328;
+		border-color: #54595d;
+	}
+
+	html.skin-theme-clientpref-night .sub-talep-uyari {
+		background-color: #3a2f12;
+		color: #fce9b0;
+	}
+
+	html.skin-theme-clientpref-night .sub-talep-sonuc {
+		background-color: #15301f;
+		color: #c8f0d4;
+	}
+
+	html.skin-theme-clientpref-night .sub-talep-sonuc-ret {
+		background-color: #3a1616;
+		color: #f6caca;
+	}
+
+	html.skin-theme-clientpref-night .sub-talep-sonuc-notr {
+		background-color: #27292d;
+		color: #eaecf0;
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	html.skin-theme-clientpref-os .sub-istatistik-kutu,
+	html.skin-theme-clientpref-os .sub-kutu,
+	html.skin-theme-clientpref-os .sub-talep {
+		background-color: #1f2328;
+		color: #eaecf0;
+		border-color: #54595d;
+	}
+
+	html.skin-theme-clientpref-os .sub-form,
+	html.skin-theme-clientpref-os .sub-talep-ust,
+	html.skin-theme-clientpref-os .sub-talep-alt {
+		background-color: #27292d;
+		color: #eaecf0;
+		border-color: #54595d;
+	}
+
+	html.skin-theme-clientpref-os .sub-istatistik-sayi {
+		color: #ffe9a8;
+	}
+
+	html.skin-theme-clientpref-os .sub-not,
+	html.skin-theme-clientpref-os .sub-form-aciklama,
+	html.skin-theme-clientpref-os .sub-talep-etiket,
+	html.skin-theme-clientpref-os .sub-istatistik-etiket {
+		color: #a2a9b1;
+	}
+
+	html.skin-theme-clientpref-os .sub-oylama {
+		background-color: #2d2716;
+		color: #eaecf0;
+	}
+
+	html.skin-theme-clientpref-os .sub-talep-sonuc {
+		background-color: #15301f;
+		color: #c8f0d4;
+	}
+
+	html.skin-theme-clientpref-os .sub-talep-sonuc-ret {
+		background-color: #3a1616;
+		color: #f6caca;
+	}
+}
