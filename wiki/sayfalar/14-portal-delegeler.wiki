@@ -1,5 +1,6 @@
 {{SUB Başlık}}
 {{MinecraftKonu|iu}}
+<div class="sub-icerik">
 '''Delegeler''', [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nde üye ulusları temsil eden oyunculardır. [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]] uyarınca Birlik portalında '''talep açma''' ve '''talep kapatma''' yetkisi yalnızca delegelere aittir. Ulus başına yapılan oylamalarda her ulusun oyunu delegelerinden biri kullanır.
 
 Aşağıdaki liste, 3 Ağustos 2026 tarihli kuruluş toplantısının katılımcılarına göre hazırlanmıştır. Tablo, [[Modül:SUB/veri]] sayfasından kendiliğinden oluşturulur; delege değişiklikleri o sayfada yapılır (bkz. [[#Delege kaydını güncelleme|aşağıda]]).
@@ -26,4 +27,5 @@ Birliğe yeni bir ulus katıldığında:
 # Ulus, delegeleriyle birlikte [[Modül:SUB/veri]] sayfasına eklenir. Portaldaki üye listesi, üye sayısı, bu sayfadaki tablolar, ulus denetimi ve oy sayımı kendiliğinden güncellenir.
 # Ulusun katılımı, [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'ne kabul edilen bir değişiklik önerisiyle işlenir.
 
+</div>
 [[Kategori:Sithpedi Uluslar Birliği]]

@@ -173,7 +173,7 @@ end
 
 function p.delegeTablosu(frame)
 	local hesaplar = not bos(frame.args.hesaplar)
-	local satirlar = { '{| class="wikitable" style="width:100%;"' }
+	local satirlar = { '{| class="sub-tablo"' }
 	table.insert(satirlar, hesaplar and '! Ulus !! Delege !! Viki hesabı' or '! Ulus !! Delegeler')
 	for _, u in ipairs(veri.uluslar) do
 		local delegeler = u.delegeler or {}
@@ -405,17 +405,19 @@ function p.oylama(frame)
 	local toplam = sayilar.evet + sayilar.hayir + sayilar.cekimser
 	local parcalar = {}
 	for _, s in ipairs(SECENEKLER) do
-		table.insert(parcalar, '<span class="sub-oylama-sayi">\'\'\'' .. s.ad .. ':\'\'\' ' .. sayilar[s.kod] .. '</span>')
+		table.insert(parcalar, '<span class="sub-oylama-sayi"><span class="sub-oylama-etiket">' .. s.ad
+			.. '</span><span class="sub-oylama-deger">' .. sayilar[s.kod] .. '</span></span>')
 	end
-	local sonuc
+	local sonuc, sonucSinifi
 	if toplam == 0 then
-		sonuc = "''henüz oy yok''"
+		sonuc, sonucSinifi = 'Henüz oy yok', ''
 	elseif cogunlukSaglandi(esik, sayilar.evet, sayilar.hayir) then
-		sonuc = "'''Gerekli çoğunluk sağlanıyor'''"
+		sonuc, sonucSinifi = 'Gerekli çoğunluk sağlanıyor', ' sub-oylama-gecti'
 	else
-		sonuc = 'Gerekli çoğunluk sağlanamıyor'
+		sonuc, sonucSinifi = 'Gerekli çoğunluk sağlanamıyor', ' sub-oylama-gecmedi'
 	end
-	table.insert(parcalar, '<span class="sub-oylama-sayi">\'\'\'Sonuç:\'\'\' ' .. sonuc .. '</span>')
+	table.insert(parcalar, '<span class="sub-oylama-sayi sub-oylama-sonuc' .. sonucSinifi
+		.. '"><span class="sub-oylama-etiket">Sonuç</span><span class="sub-oylama-deger">' .. sonuc .. '</span></span>')
 	ekle('<div class="sub-oylama-sayilar">' .. table.concat(parcalar) .. '</div>')
 
 	if usul == 'ulus' then

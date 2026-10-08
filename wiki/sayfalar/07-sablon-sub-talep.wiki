@@ -12,7 +12,7 @@
 <div class="sub-talep-sonuc {{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}|kabul=|ret=sub-talep-sonuc-ret|#default=sub-talep-sonuc-notr}}">'''Bu talep kapanmıştır''' — {{SUB Durum|{{{durum|}}}}}{{#if:{{{kapatan|}}}|&#32;· Kapatan: {{{kapatan}}}}}{{#if:{{{kapanış|}}}|&#32;· {{{kapanış}}}}}{{#if:{{{sonuç|}}}|<br />'''Sonuç:''' {{{sonuç}}}}}<br /><span class="sub-not">Kapanmış talepler arşiv niteliğindedir; lütfen değiştirmeyin. Konuyu yeniden gündeme getirmek için yeni bir talep açın.</span></div>
 | #default =
 }}
-<div class="sub-talep-alt"><span class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit&section=new}} '''+ Yeni görüş başlığı ekle''']</span> · [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]] · [[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]] · [[Portal:Sithpedi Uluslar Birliği|Portala dön]]</div>
+<div class="sub-talep-alt"><span class="sub-ok plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit&section=new}} Yeni görüş başlığı ekle]</span><span class="sub-ok">[[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]]</span><span class="sub-ok">[[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]]</span><span class="sub-ok">[[Portal:Sithpedi Uluslar Birliği|Portala dön]]</span></div>
 </div>
 {{#ifeq:{{NAMESPACE}}{{#titleparts:{{PAGENAME}}|2}}|Portal:Sithpedi Uluslar Birliği/Talepler|[[Kategori:Sithpedi Uluslar Birliği talepleri]]{{#switch:{{SUB Tür|{{{tür|}}}|anahtar}}
 | degisiklik = [[Kategori:Sithpedi Uluslar Birliği değişiklik önerileri]]
@@ -35,7 +35,7 @@ Bu şablonu elle eklemenize gerek yoktur: portaldaki "Yeni talep aç" kutuların
 Şablon yalnızca <code>Portal:Sithpedi Uluslar Birliği/Talepler/…</code> adlı sayfalarda kategori ekler; bu sayede örnek ve belgeleme sayfaları listelere karışmaz.
 
 == Parametreler ==
-{| class="wikitable"
+{| class="sub-tablo"
 ! Parametre !! Açıklama !! Örnek
 |-
 | <code>tür</code> || Talebin türü: <code>değişiklik</code>, <code>oylama</code> veya <code>tartışma</code> || <code>oylama</code>

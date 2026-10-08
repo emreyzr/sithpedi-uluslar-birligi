@@ -6,12 +6,12 @@
  | tarih | tarih araştırma | sithpedi tarihini araştırma komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde V: Sithpedi Tarihini Araştırma Komitesi|Sithpedi Tarihini Araştırma Komitesi]]
  | genel | genel kurul | = Genel Kurul (tüm üyeler)
  | #default = {{{1}}}
-}}</includeonly><noinclude>
+}}</includeonly><noinclude><templatestyles src="Şablon:SUB Portal/stil.css" />
 == Şablon Açıklaması ==
 Bir talebin ilgili olduğu komiteyi, [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'ndeki maddesine bağlantı vererek gösterir.
 
 == Kullanımı ==
-{| class="wikitable"
+{| class="sub-tablo"
 ! Yazılan değer !! Görünüm
 |-
 | <code>güvenlik</code> || {{SUB Komite|güvenlik}}

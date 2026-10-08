@@ -1,9 +1,10 @@
 {{SUB Başlık}}
 {{MinecraftKonu|iu}}
+<div class="sub-icerik">
 Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portalında taleplerin nasıl açılacağını, tartışılacağını, oylanacağını ve kapatılacağını açıklar.
 
 == Talep türleri ==
-{| class="wikitable"
+{| class="sub-tablo"
 ! Tür !! Ne için kullanılır? !! Başlangıç durumu
 |-
 | {{SUB Tür|değişiklik}} || [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'nde bir maddenin değiştirilmesi, kaldırılması ya da yeni bir madde eklenmesi || {{SUB Durum|tartışmada}}
@@ -54,7 +55,7 @@ Oylama süresi dolduğunda ya da tartışma sonuçlandığında herhangi bir del
 Kapanmış talepler arşiv niteliğindedir ve değiştirilmemelidir.
 
 == Durumlar ==
-{| class="wikitable"
+{| class="sub-tablo"
 ! Durum !! <code>durum</code> değeri !! Anlamı
 |-
 | {{SUB Durum|tartışmada}} || <code>tartışmada</code> || Talep görüşülüyor.
@@ -70,4 +71,5 @@ Kapanmış talepler arşiv niteliğindedir ve değiştirilmemelidir.
 | {{SUB Durum|geri çekildi}} || <code>geri çekildi</code> || Talep, açan tarafından geri çekildi ya da yönergeye aykırı olduğu için kapatıldı.
 |}
 
+</div>
 [[Kategori:Sithpedi Uluslar Birliği]]

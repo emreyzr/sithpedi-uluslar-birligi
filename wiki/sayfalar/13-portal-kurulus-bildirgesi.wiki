@@ -11,10 +11,9 @@ Düzenleyen ve Sunan:<br />''[[Kan ve Demir İmparatorluğu]]'ndan Demir Şansö
 3 Ağustos 2026 · Atatürk Orman Çiftliği<br />''"[[Kralın Vasiyeti]]'nin Işığında, Yeni Bir Çağın Şafağında…"''
 </div>
 
-{| class="wikitable" style="margin:1em auto; max-width:720px; font-size:0.9em;"
-| Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nin kurucu belgesidir. Metin, yalnızca [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|talep yönergesine]] uygun olarak açılan ve '''kabul edilen''' değişiklik önerileri doğrultusunda değiştirilir. Yapılan değişiklikler aşağıdaki [[#Değişiklik geçmişi|Değişiklik geçmişi]] bölümünde listelenir.
-|}
+<div class="sub-bilgi" style="max-width:720px; margin-left:auto; margin-right:auto;">Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nin kurucu belgesidir. Metin, yalnızca [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|talep yönergesine]] uygun olarak açılan ve '''kabul edilen''' değişiklik önerileri doğrultusunda değiştirilir. Yapılan değişiklikler aşağıdaki [[#Değişiklik geçmişi|Değişiklik geçmişi]] bölümünde listelenir.</div>
 
+<div class="sub-icerik">
 == Giriş ==
 Bizler; Sithpedi topraklarının kadim, onurlu ve bağımsız ulusları olarak, geçmişin mirasını omuzlarımızda taşıyor ve geleceğin temellerini kendi ellerimizle atıyoruz.
 
@@ -83,8 +82,10 @@ category = Sithpedi Uluslar Birliği kabul edilen talepleri
 ordermethod = firstedit
 order = ascending
 include = {SUB Talep¦SUB Talep/satır}
-format = {¦ class="wikitable sortable" style="width:100%;"\n! Talep !! Tür !! Durum !! Ulus,,,\n¦}
+format = {¦ class="sub-tablo sortable"\n! Talep !! Tür !! Durum !! Ulus,,,\n¦}
 noresultsheader = ''Henüz kabul edilmiş bir değişiklik önerisi bulunmamaktadır.''
 </dpl>
+
+</div>
 
 [[Kategori:Sithpedi Uluslar Birliği]]

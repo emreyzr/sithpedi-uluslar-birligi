@@ -10,7 +10,7 @@ Oylar, şablonun altındaki ''Evet'', ''Hayır'' ve ''Çekimser'' başlıkların
 Sayım, sayfanın '''kaydedilmiş''' hâline göre yapılır; önizlemede yeni eklediğiniz oy henüz sayılmaz.
 
 == Parametreler ==
-{| class="wikitable"
+{| class="sub-tablo"
 ! Parametre !! Değerler !! Varsayılan
 |-
 | <code>oylama</code> || <code>ulus</code> (her üye ulus bir oy) veya <code>oyuncu</code> (her oyuncu bir oy) || <code>ulus</code>

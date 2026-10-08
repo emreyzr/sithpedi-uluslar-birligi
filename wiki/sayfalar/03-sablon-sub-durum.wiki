@@ -13,7 +13,7 @@ Bir [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] talebinin dur
 == Kullanımı ==
 <code><nowiki>{{SUB Durum|durum}}</nowiki></code>
 
-{| class="wikitable"
+{| class="sub-tablo"
 ! Yazılan değer !! Görünüm !! Talep açık mı?
 |-
 | <code>tartışmada</code> || {{SUB Durum|tartışmada}} || Açık
