@@ -1,0 +1,8 @@
+<noinclude>
+== Şablon Açıklaması ==
+Bu şablon '''bilerek boş bırakılmıştır'''. [[mw:Extension:DynamicPageList3|DynamicPageList3]] eklentisi, ürettiği her listenin sonuna <code><nowiki>{{Extension DPL}}</nowiki></code> çağrısını ekler. Bu sayfa olmadığında listelerin altında kırmızı bir bağlantı görünür. Sayfayı silmeyin ve içine görünür bir şey eklemeyin.
+
+Kullanıldığı yerler arasında [[Portal:Sithpedi Uluslar Birliği]] bulunmaktadır.
+
+[[Kategori:Teknik şablonları]]
+</noinclude>

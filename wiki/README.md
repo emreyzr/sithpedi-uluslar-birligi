@@ -46,6 +46,7 @@ The [`manifest.tsv`](manifest.tsv) file holds the same mapping in machine-readab
 |---|---|---|
 | 0a | `sayfalar/00a-modul-sub-veri.lua` | `Modül:SUB/veri` |
 | 0b | `sayfalar/00b-modul-sub.lua` | `Modül:SUB` |
+| 0c | `sayfalar/00c-sablon-extension-dpl.wiki` | `Şablon:Extension DPL` (intentionally empty; DPL3 appends `{{Extension DPL}}` to every list, so without this page a red link appears) |
 | 1 | `sayfalar/01-sablon-sub-stil.css` | `Şablon:SUB Portal/stil.css` |
 | 2 | `sayfalar/02-sablon-sub-uye-ulus.wiki` | `Şablon:SUB Üye ulus` |
 | 3 | `sayfalar/03-sablon-sub-durum.wiki` | `Şablon:SUB Durum` |
