@@ -4,6 +4,196 @@
  * Bu sayfa TemplateStyles ile yüklenir (<templatestyles src="Şablon:SUB Portal/stil.css" />).
  */
 
+/* ---------- Gezinti başlığı (Şablon:SUB Başlık) — bundestag.de tasarımından esinlenmiştir ---------- */
+.sub-ust {
+	margin: 0 0 20px;
+	color: #191919;
+	font-family: 'Noto Sans', 'Noto Sans Display', Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+}
+
+.sub-ust a,
+.sub-ust a:visited {
+	color: #191919;
+	text-decoration: none;
+}
+
+.sub-ust-servis {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 4px 36px;
+	min-height: 40px;
+	padding: 0 42px;
+	background-color: #f6f6f6;
+	font-size: 14px;
+}
+
+.sub-ust-servis-oge a:hover {
+	text-decoration: underline;
+}
+
+.sub-ust-marka {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	min-height: 95px;
+	padding: 0 42px;
+	background-color: #ffffff;
+}
+
+.sub-ust-logo {
+	flex: 0 0 auto;
+	line-height: 0;
+}
+
+.sub-ust-logo img {
+	display: block;
+	height: 55px;
+	width: auto;
+}
+
+.sub-ust-ad {
+	font-family: 'Noto Serif', Georgia, 'Times New Roman', serif;
+	font-size: 22px;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+}
+
+.sub-ust-menu {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6px 36px;
+	min-height: 60px;
+	padding: 8px 42px;
+	background-color: #eeeeee;
+	font-family: 'Noto Serif', Georgia, 'Times New Roman', serif;
+	font-size: 18px;
+}
+
+.sub-ust-menu-oge {
+	white-space: nowrap;
+}
+
+.sub-ust-menu-oge a {
+	display: inline-block;
+	padding: 4px 0 3px;
+	border-bottom: 2px solid transparent;
+}
+
+.sub-ust .mw-selflink,
+.sub-ust .selflink {
+	font-weight: normal;
+}
+
+.sub-ust-menu-oge a:hover,
+.sub-ust-menu-oge a:focus {
+	border-bottom-color: #a2a2a2;
+}
+
+.sub-ust-aktif a,
+.sub-ust-aktif a:hover {
+	border-bottom-color: #191919;
+}
+
+.sub-ust-ara {
+	margin-left: auto;
+	line-height: 0;
+}
+
+.sub-ust-ara a {
+	display: inline-block;
+	padding: 6px;
+}
+
+.sub-ust-ara-simge {
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 2px solid #191919;
+	border-radius: 50%;
+}
+
+.sub-ust-ara-simge::after {
+	content: '';
+	position: absolute;
+	right: -7px;
+	bottom: -6px;
+	width: 8px;
+	height: 2px;
+	background-color: #191919;
+	transform: rotate(45deg);
+}
+
+.sub-ust-gizli {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+}
+
+.sub-ust-iz {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 60px;
+	padding: 0 42px;
+	background-color: #f6f6f6;
+	font-size: 14px;
+}
+
+.sub-ust-iz a {
+	text-decoration: underline;
+}
+
+.sub-ust-iz-ayrac {
+	margin: 0 10px;
+	color: #707070;
+}
+
+.sub-ust-iz-son {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+	.sub-ust-servis,
+	.sub-ust-marka,
+	.sub-ust-iz {
+		padding: 0 12px;
+	}
+
+	.sub-ust-servis {
+		gap: 4px 20px;
+		font-size: 13px;
+	}
+
+	.sub-ust-marka {
+		gap: 16px;
+		min-height: 80px;
+	}
+
+	.sub-ust-logo img {
+		height: 42px;
+	}
+
+	.sub-ust-ad {
+		font-size: 19px;
+	}
+
+	.sub-ust-menu {
+		flex-wrap: nowrap;
+		gap: 0 24px;
+		padding: 0 12px;
+		font-size: 16px;
+		overflow-x: auto;
+	}
+}
+
 /* ---------- Portal düzeni ---------- */
 .sub-portal {
 	max-width: 1200px;
@@ -380,6 +570,37 @@
 
 /* ---------- Gece modu (Vector 2022 ve Minerva) ---------- */
 @media screen {
+	html.skin-theme-clientpref-night .sub-ust,
+	html.skin-theme-clientpref-night .sub-ust a,
+	html.skin-theme-clientpref-night .sub-ust a:visited {
+		color: #eaecf0;
+	}
+
+	html.skin-theme-clientpref-night .sub-ust-servis,
+	html.skin-theme-clientpref-night .sub-ust-iz {
+		background-color: #1f2328;
+	}
+
+	html.skin-theme-clientpref-night .sub-ust-marka {
+		background-color: #101418;
+	}
+
+	html.skin-theme-clientpref-night .sub-ust-menu {
+		background-color: #27292d;
+	}
+
+	html.skin-theme-clientpref-night .sub-ust-aktif a {
+		border-bottom-color: #eaecf0;
+	}
+
+	html.skin-theme-clientpref-night .sub-ust-ara-simge {
+		border-color: #eaecf0;
+	}
+
+	html.skin-theme-clientpref-night .sub-ust-ara-simge::after {
+		background-color: #eaecf0;
+	}
+
 	html.skin-theme-clientpref-night .sub-istatistik-kutu,
 	html.skin-theme-clientpref-night .sub-kutu,
 	html.skin-theme-clientpref-night .sub-talep {

@@ -1,6 +1,6 @@
-<includeonly><templatestyles src="Şablon:SUB Portal/stil.css" />__NEWSECTIONLINK__
+<includeonly><templatestyles src="Şablon:SUB Portal/stil.css" />__NEWSECTIONLINK__{{SUB Başlık}}
 <div class="sub-talep sub-talep-{{SUB Tür|{{{tür|}}}|anahtar}}">
-<div class="sub-talep-ust"><span>[[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] › [[Portal:Sithpedi Uluslar Birliği#Talepler|Talepler]]</span><span>{{SUB Tür|{{{tür|}}}}} {{SUB Durum|{{{durum|}}}}}</span></div>
+<div class="sub-talep-ust"><span class="sub-talep-etiket">Talep bilgileri</span><span>{{SUB Tür|{{{tür|}}}}} {{SUB Durum|{{{durum|}}}}}</span></div>
 <div class="sub-talep-govde">
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Açan delege</span>{{#if:{{{açan|}}}|{{{açan}}}{{#invoke:SUB|acanDurumu}}|—}}</div>
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Temsil ettiği ulus</span>{{#if:{{SUB Üye ulus|{{{ulus|}}}}}|{{SUB Üye ulus|{{{ulus|}}}|bağlantı}}|{{#if:{{{ulus|}}}|{{{ulus}}}|—}}}}</div>

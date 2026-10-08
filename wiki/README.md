@@ -53,6 +53,8 @@ The [`manifest.tsv`](manifest.tsv) file holds the same mapping in machine-readab
 | 4 | `sayfalar/04-sablon-sub-durum-anahtar.wiki` | `Şablon:SUB Durum/anahtar` |
 | 5 | `sayfalar/05-sablon-sub-tur.wiki` | `Şablon:SUB Tür` |
 | 6 | `sayfalar/06-sablon-sub-komite.wiki` | `Şablon:SUB Komite` |
+| 6b | `sayfalar/06b-sablon-sub-baslik.wiki` | `Şablon:SUB Başlık` (navigation header on every portal page) |
+| 6c | `sayfalar/06c-sablon-sub-baslik-bolum.wiki` | `Şablon:SUB Başlık/bölüm` |
 | 7 | `sayfalar/07-sablon-sub-talep.wiki` | `Şablon:SUB Talep` |
 | 8 | `sayfalar/08-sablon-sub-talep-satir.wiki` | `Şablon:SUB Talep/satır` |
 | 9 | `sayfalar/09-sablon-sub-oylama.wiki` | `Şablon:SUB Oylama` |

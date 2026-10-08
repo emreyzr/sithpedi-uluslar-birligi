@@ -1,3 +1,4 @@
+{{SUB Başlık}}
 {{MinecraftKonu|iu}}
 '''Delegeler''', [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nde üye ulusları temsil eden oyunculardır. [[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]] uyarınca Birlik portalında '''talep açma''' ve '''talep kapatma''' yetkisi yalnızca delegelere aittir. Ulus başına yapılan oylamalarda her ulusun oyunu delegelerinden biri kullanır.
 

@@ -1,18 +1,11 @@
 __NOTOC__ __NOEDITSECTION__
 <templatestyles src="Şablon:SUB Portal/stil.css" />
+{{SUB Başlık}}
 <div class="sub-portal">
 <div class="sub-banner">
-{{#ifexist:Dosya:Sithpedi Uluslar Birliği bayrağı.png|[[Dosya:Sithpedi Uluslar Birliği bayrağı.png|120px|link=Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Sithpedi Uluslar Birliği bayrağı]]}}
 <div class="sub-banner-baslik">Sithpedi Uluslar Birliği</div>
 <div class="sub-banner-alt">"[[Kralın Vasiyeti]]'nin Işığında, Yeni Bir Çağın Şafağında…"</div>
 <div class="sub-banner-bilgi">Kuruluş: 3 Ağustos 2026 · Atatürk Orman Çiftliği · [[Sithpedi Minecraft Etkinlikleri#Sithpedi Minecraft Forever|Sithpedi ''Minecraft'' Forever]]</div>
-</div>
-<div class="sub-menu">
-<span class="sub-menu-oge">[[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]</span>
-<span class="sub-menu-oge">[[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]]</span>
-<span class="sub-menu-oge">[[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]]</span>
-<span class="sub-menu-oge">[[#Yeni talep aç|Yeni talep aç]]</span>
-<span class="sub-menu-oge">[[:Kategori:Sithpedi Uluslar Birliği talepleri|Tüm talepler]]</span>
 </div>
 <div class="sub-istatistik">
 <div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{#invoke:SUB|uyeSayisi}}</div><div class="sub-istatistik-etiket">Üye ulus</div></div>

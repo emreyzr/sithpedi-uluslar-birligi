@@ -1,3 +1,4 @@
+{{SUB Başlık}}
 {{MinecraftKonu|iu}}
 {{#ifexist:Dosya:Sithpedi Uluslar Birliği bayrağı.png|[[Dosya:Sithpedi Uluslar Birliği bayrağı.png|150px|center|link=Portal:Sithpedi Uluslar Birliği]]}}
 <div style="text-align:center;">

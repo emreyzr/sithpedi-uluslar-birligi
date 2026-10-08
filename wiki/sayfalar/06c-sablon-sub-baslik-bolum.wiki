@@ -1,0 +1,5 @@
+<includeonly>{{#ifeq:{{#titleparts:{{FULLPAGENAME}}|1}}|Portal:Sithpedi Uluslar Birliği|{{#titleparts:{{FULLPAGENAME}}|1|2}}}}</includeonly><noinclude>
+== Şablon Açıklaması ==
+{{tl|SUB Başlık}} şablonunun yardımcısıdır. Bulunulan sayfa <code>Portal:Sithpedi Uluslar Birliği/…</code> altındaysa portal içindeki bölümün adını (örneğin <code>Delegeler</code>, <code>Talepler</code>) döndürür; portalın ana sayfasında ve başka sayfalarda boş sonuç verir.
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

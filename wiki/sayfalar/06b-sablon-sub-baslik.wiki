@@ -1,0 +1,19 @@
+<includeonly><templatestyles src="Şablon:SUB Portal/stil.css" /><div class="sub-ust">
+<div class="sub-ust-servis"><span class="sub-ust-servis-oge">[[Sithpedi Minecraft Etkinlikleri#Sithpedi Minecraft Forever|Sithpedi ''Minecraft'' Forever]]</span><span class="sub-ust-servis-oge">[[Kralın Vasiyeti]]</span><span class="sub-ust-servis-oge sub-ust-dil">TR</span></div>
+<div class="sub-ust-marka"><span class="sub-ust-logo">[[Dosya:Sithpedi Uluslar Birliği bayrağı.png|x55px|link=Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]</span><span class="sub-ust-ad">[[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]</span></div>
+<div class="sub-ust-menu"><span class="sub-ust-menu-oge {{#ifeq:{{SUB Başlık/bölüm}}|Kuruluş Bildirgesi|sub-ust-aktif}}">[[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]</span><span class="sub-ust-menu-oge">[[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Maddeler|Komiteler]]</span><span class="sub-ust-menu-oge {{#ifeq:{{SUB Başlık/bölüm}}|Delegeler|sub-ust-aktif}}">[[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]]</span><span class="sub-ust-menu-oge {{#ifeq:{{SUB Başlık/bölüm}}|Talepler|sub-ust-aktif}}">[[Portal:Sithpedi Uluslar Birliği#Talepler|Talepler]]</span><span class="sub-ust-menu-oge">[[Portal:Sithpedi Uluslar Birliği#Yeni talep aç|Yeni talep]]</span><span class="sub-ust-menu-oge {{#ifeq:{{SUB Başlık/bölüm}}|Talep yönergesi|sub-ust-aktif}}">[[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]]</span><span class="sub-ust-menu-oge">[[:Kategori:Sithpedi Uluslar Birliği kapalı talepleri|Arşiv]]</span><span class="sub-ust-ara plainlinks" title="Portalda ara">[{{fullurl:Özel:Ara|prefix={{urlencode:Portal:Sithpedi Uluslar Birliği}}&fulltext=1}} <span class="sub-ust-ara-simge"></span><span class="sub-ust-gizli">Ara</span>]</span></div>
+<div class="sub-ust-iz">{{#if:{{SUB Başlık/bölüm}}|[[Portal:Sithpedi Uluslar Birliği|Ana sayfa]]<span class="sub-ust-iz-ayrac">›</span>{{#switch:{{SUB Başlık/bölüm}}
+ | Talepler = [[Portal:Sithpedi Uluslar Birliği#Talepler|Talepler]]{{#if:{{#titleparts:{{FULLPAGENAME}}|0|3}}|<span class="sub-ust-iz-ayrac">›</span><span class="sub-ust-iz-son">{{#titleparts:{{FULLPAGENAME}}|0|3}}</span>}}
+ | #default = <span class="sub-ust-iz-son">{{#titleparts:{{FULLPAGENAME}}|0|2}}</span>
+}}|<span class="sub-ust-iz-son">Ana sayfa</span>}}</div>
+</div></includeonly><noinclude>
+== Şablon Açıklaması ==
+[[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portalının bütün sayfalarının en üstünde yer alan gezinti başlığıdır. Tasarımı Alman Federal Meclisi'nin (bundestag.de) internet sitesinden esinlenmiştir ve dört bölümden oluşur:
+# '''Servis çubuğu''' — sağda küçük bağlantılar.
+# '''Marka çubuğu''' — Birlik bayrağı ve "Sithpedi Uluslar Birliği" yazısı.
+# '''Ana menü''' — portalın bölümleri ve arama. Bulunulan bölüm altı çizili gösterilir.
+# '''Konum çubuğu''' — "Ana sayfa › …" biçiminde nerede olunduğunu gösterir.
+
+Şablon parametre almaz; bulunduğu sayfayı adından kendisi anlar. Talep sayfalarına {{tl|SUB Talep}} aracılığıyla kendiliğinden eklenir. Portalın diğer sayfalarında sayfanın en üstüne <code><nowiki>{{SUB Başlık}}</nowiki></code> yazılır.
+
+[[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

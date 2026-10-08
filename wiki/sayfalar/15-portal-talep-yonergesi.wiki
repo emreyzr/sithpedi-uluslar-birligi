@@ -1,3 +1,4 @@
+{{SUB Başlık}}
 {{MinecraftKonu|iu}}
 Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portalında taleplerin nasıl açılacağını, tartışılacağını, oylanacağını ve kapatılacağını açıklar.
 
