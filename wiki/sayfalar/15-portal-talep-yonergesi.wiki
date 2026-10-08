@@ -26,6 +26,25 @@ Bu sayfa, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portal�
 
 Başlık benzersiz olmalıdır. Aynı başlıkta bir talep zaten varsa düğme, yeni bir sayfa yerine o talebi açar. Böyle bir durumda geri dönüp başlığı değiştirin (örneğin sonuna yılı ekleyin).
 
+== Komiteler ==
+Her talep, açılırken bir [[Portal:Sithpedi Uluslar Birliği/Komiteler|komiteye]] atanmalıdır. Komite, şablonun <code>komite</code> alanına aşağıdaki kısa adlardan biri yazılarak seçilir:
+{| class="sub-tablo"
+! Numara !! Komite !! <code>komite</code> değeri
+|-
+| I || Güvenlik Konseyi || <code>güvenlik</code>
+|-
+| II || Ulaştırma ve Altyapı Komitesi || <code>ulaştırma</code>
+|-
+| III || Ortak Alan Komitesi || <code>ortak alan</code>
+|-
+| IV || Ticaret ve İşbirliği Komitesi || <code>ticaret</code>
+|-
+| V || Sithpedi Tarihini Araştırma Komitesi || <code>tarih</code>
+|-
+| VI || Genel Kurul || <code>genel</code>
+|}
+Tek bir komitenin alanına girmeyen ya da Birliğin bütününü ilgilendiren talepler Genel Kurul'a (<code>genel</code>) atanır. '''Komite alanı boş bırakılan ya da tanınmayan bir değer içeren talepler geçersizdir:''' talep sayfasında uyarı gösterilir, talep portal listelerinde ve sayılarda yer almaz. Komite yazıldığında talep kendiliğinden listelere girer.
+
 == Görüş bildirme ==
 * Görüşünüzü ilgili başlığın altına, satır başına <code>:</code> koyarak ve sonuna imzanızı (<code><nowiki>~~~~</nowiki></code>) ekleyerek yazın. Bir görüşe yanıt verirken bir <code>:</code> daha ekleyin.
 * Yeni bir alt konu açmak için talep kutusundaki '''+ Yeni görüş başlığı ekle''' bağlantısını kullanın.

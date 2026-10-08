@@ -11,6 +11,11 @@ Sithpedi Uluslar Birliği — portal modülü
   acanDurumu     {{SUB Talep}}        Talebi açanın kayıtlı delege olup olmadığı
   talepUyarisi   {{SUB Talep}}        Ulus veya delege uyuşmazlığı uyarısı
   oylama         {{SUB Oylama}}       Oy kuralları, otomatik sayım ve sonuç
+  komite         {{SUB Komite}}       Komite adı / bağlantısı (boş = geçersiz)
+  komiteKategorileri {{SUB Talep}}    Talebin komite kategorileri
+  komiteKutulari Komiteler sayfası    Altı komite kutusu ve talep sayıları
+  komiteBolumleri Komiteler sayfası   Komitelerin görev tanımları
+  komiteListesi  Portal               Kenar sütundaki komite listesi
 ]]
 
 local p = {}
@@ -19,6 +24,8 @@ local veri = mw.loadData('Modül:SUB/veri')
 local dil = mw.getContentLanguage()
 
 local DELEGELER_SAYFASI = 'Portal:Sithpedi Uluslar Birliği/Delegeler'
+local KOMITELER_SAYFASI = 'Portal:Sithpedi Uluslar Birliği/Komiteler'
+local BILDIRGE_SAYFASI = 'Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi'
 local YONERGE_SAYFASI = 'Portal:Sithpedi Uluslar Birliği/Talep yönergesi'
 
 ------------------------------------------------------------------------
@@ -203,6 +210,114 @@ function p.delegeTablosu(frame)
 	end
 	table.insert(satirlar, '|}')
 	return table.concat(satirlar, '\n')
+end
+
+------------------------------------------------------------------------
+-- Komiteler
+------------------------------------------------------------------------
+
+local komiteDizini = {}
+for _, k in ipairs(veri.komiteler) do
+	komiteDizini[anahtar(k.kod)] = k
+	komiteDizini[anahtar(k.ad)] = k
+	komiteDizini[anahtar(k.numara)] = k
+	for _, t in ipairs(k.takmaAdlar or {}) do
+		komiteDizini[anahtar(t)] = k
+	end
+end
+
+local function komiteBul(ad)
+	if bos(ad) then
+		return nil
+	end
+	ad = ad:gsub('%[%[([^|%]]*)|?[^%]]*%]%]', '%1'):gsub("'''?", '')
+	return komiteDizini[anahtar(ad)]
+end
+
+local function komiteBasligi(k)
+	return k.numara .. '. ' .. k.ad
+end
+
+local function komiteBaglantisi(k, metin)
+	return '[[' .. KOMITELER_SAYFASI .. '#' .. komiteBasligi(k) .. '|' .. (metin or k.ad) .. ']]'
+end
+
+local function komiteKategorisi(k, acik)
+	return 'Sithpedi Uluslar Birliği ' .. k.ad .. (acik and ' açık talepleri' or ' talepleri')
+end
+
+-- {{SUB Komite|değer}} → ad; {{SUB Komite|değer|bağlantı}} → bağlantı;
+-- {{SUB Komite|değer|kod}} → kısa kod. Tanınmayan değerlerde boş döner.
+function p.komite(frame)
+	local a = argumanlar(frame)
+	local k = komiteBul(a[1])
+	if not k then
+		return ''
+	end
+	local bicim = mw.text.trim(a[2] or '')
+	if bicim == 'kod' then
+		return k.kod
+	elseif bicim ~= '' then
+		return komiteBaglantisi(k)
+	end
+	return k.ad
+end
+
+-- Talebin komite kategorileri. 1 = komite alanı, 2 = durum anahtarı
+function p.komiteKategorileri(frame)
+	local k = komiteBul(frame.args[1])
+	if not k then
+		return ''
+	end
+	local durum = mw.text.trim(frame.args[2] or '')
+	local s = '[[Kategori:' .. komiteKategorisi(k, false) .. ']]'
+	if durum == 'tartismada' or durum == 'oylamada' then
+		s = s .. '[[Kategori:' .. komiteKategorisi(k, true) .. ']]'
+	end
+	return s
+end
+
+function p.komiteKutulari()
+	local out = { '<div class="sub-komiteler">' }
+	for _, k in ipairs(veri.komiteler) do
+		local toplam = mw.site.stats.pagesInCategory(komiteKategorisi(k, false), 'pages')
+		local acik = mw.site.stats.pagesInCategory(komiteKategorisi(k, true), 'pages')
+		table.insert(out, '<div class="sub-komite">'
+			.. '<div class="sub-komite-numara">' .. k.numara .. '</div>'
+			.. '<div class="sub-komite-ad">' .. komiteBaglantisi(k) .. '</div>'
+			.. '<div class="sub-komite-sayilar">'
+			.. '<span class="sub-komite-toplam">' .. toplam .. '</span>'
+			.. '<span class="sub-komite-etiket">talep</span>'
+			.. '<span class="sub-komite-acik' .. (acik == 0 and ' sub-komite-acik-yok' or '') .. '">' .. acik .. ' açık</span>'
+			.. '</div>'
+			.. '<div class="sub-komite-alt"><span class="sub-ok">[[:Kategori:' .. komiteKategorisi(k, false) .. '|Talepleri görüntüle]]</span></div>'
+			.. '</div>')
+	end
+	table.insert(out, '</div>')
+	return table.concat(out)
+end
+
+function p.komiteBolumleri()
+	local out = {}
+	for _, k in ipairs(veri.komiteler) do
+		table.insert(out, '== ' .. komiteBasligi(k) .. ' ==')
+		table.insert(out, k.gorev)
+		local baglantilar = { '<span class="sub-ok">[[:Kategori:' .. komiteKategorisi(k, false) .. '|Komitenin talepleri]]</span>' }
+		if not bos(k.madde) then
+			table.insert(baglantilar, 1, '<span class="sub-ok">[[' .. BILDIRGE_SAYFASI .. '#' .. k.madde .. ': ' .. k.ad
+				.. '|Kuruluş Bildirgesi, ' .. k.madde .. ']]</span>')
+		end
+		table.insert(out, '<div class="sub-talep-alt">' .. table.concat(baglantilar) .. '</div>\n')
+	end
+	return table.concat(out, '\n')
+end
+
+function p.komiteListesi()
+	local out = {}
+	for _, k in ipairs(veri.komiteler) do
+		table.insert(out, '* ' .. komiteBaglantisi(k, komiteBasligi(k)))
+	end
+	return table.concat(out, '\n')
 end
 
 ------------------------------------------------------------------------

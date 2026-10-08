@@ -1,0 +1,3 @@
+Komite: '''[[Portal:Sithpedi Uluslar Birliği/Komiteler#I. Güvenlik Konseyi|Güvenlik Konseyi]]'''. Bu komiteye atanmış bütün [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] talepleri. Bu kategori {{tl|SUB Talep}} şablonu tarafından, talebin <code>komite</code> alanına göre kendiliğinden doldurulur.
+
+[[Kategori:Sithpedi Uluslar Birliği talepleri]]

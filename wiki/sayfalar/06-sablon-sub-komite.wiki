@@ -1,30 +1,29 @@
-<includeonly>{{#switch: {{lc:{{{1|}}}}}
- | güvenlik | güvenlik konseyi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde I: Güvenlik Konseyi|Güvenlik Konseyi]]
- | ulaştırma | altyapı | ulaştırma ve altyapı | ulaştırma ve altyapı komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde II: Ulaştırma ve Altyapı Komitesi|Ulaştırma ve Altyapı Komitesi]]
- | ortak alan | ortak alan komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde III: Ortak Alan Komitesi|Ortak Alan Komitesi]]
- | ticaret | işbirliği | ticaret ve işbirliği | ticaret ve işbirliği komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde IV: Ticaret ve İşbirliği Komitesi|Ticaret ve İşbirliği Komitesi]]
- | tarih | tarih araştırma | sithpedi tarihini araştırma komitesi = [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde V: Sithpedi Tarihini Araştırma Komitesi|Sithpedi Tarihini Araştırma Komitesi]]
- | genel | genel kurul | = Genel Kurul (tüm üyeler)
- | #default = {{{1}}}
-}}</includeonly><noinclude><templatestyles src="Şablon:SUB Portal/stil.css" />
+<includeonly>{{#invoke:SUB|komite}}</includeonly><noinclude><templatestyles src="Şablon:SUB Portal/stil.css" />
 == Şablon Açıklaması ==
-Bir talebin ilgili olduğu komiteyi, [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]]'ndeki maddesine bağlantı vererek gösterir.
+Bir talebin komite alanını tanır ve komitenin adını ya da [[Portal:Sithpedi Uluslar Birliği/Komiteler|Komiteler]] sayfasındaki bölümüne bağlantıyı döndürür. Komite listesi [[Modül:SUB/veri]] sayfasında tutulur.
+
+Tanınmayan ya da boş bir değer için '''boş sonuç''' döndürür. Komitesi geçerli olmayan talepler {{tl|SUB Talep}} tarafından uyarıyla gösterilir ve listelere alınmaz.
 
 == Kullanımı ==
+* <code><nowiki>{{SUB Komite|güvenlik}}</nowiki></code> → komitenin adı
+* <code><nowiki>{{SUB Komite|güvenlik|bağlantı}}</nowiki></code> → Komiteler sayfasındaki bölüme bağlantı
+* <code><nowiki>{{SUB Komite|güvenlik|kod}}</nowiki></code> → kısa kod
+
 {| class="sub-tablo"
-! Yazılan değer !! Görünüm
+! Numara !! Yazılan değer !! Görünüm
 |-
-| <code>güvenlik</code> || {{SUB Komite|güvenlik}}
+| I || <code>güvenlik</code> || {{SUB Komite|güvenlik|bağlantı}}
 |-
-| <code>ulaştırma</code> || {{SUB Komite|ulaştırma}}
+| II || <code>ulaştırma</code> || {{SUB Komite|ulaştırma|bağlantı}}
 |-
-| <code>ortak alan</code> || {{SUB Komite|ortak alan}}
+| III || <code>ortak alan</code> || {{SUB Komite|ortak alan|bağlantı}}
 |-
-| <code>ticaret</code> || {{SUB Komite|ticaret}}
+| IV || <code>ticaret</code> || {{SUB Komite|ticaret|bağlantı}}
 |-
-| <code>tarih</code> || {{SUB Komite|tarih}}
+| V || <code>tarih</code> || {{SUB Komite|tarih|bağlantı}}
 |-
-| <code>genel</code> veya boş || {{SUB Komite|genel}}
+| VI || <code>genel</code> || {{SUB Komite|genel|bağlantı}}
 |}
+Komitenin numarası (<code>I</code>…<code>VI</code>) ya da tam adı da kabul edilir.
 
 [[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>

@@ -1,0 +1,3 @@
+Komite: '''[[Portal:Sithpedi Uluslar Birliği/Komiteler#V. Sithpedi Tarihini Araştırma Komitesi|Sithpedi Tarihini Araştırma Komitesi]]'''. Bu komiteye atanmış bütün [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] talepleri. Bu kategori {{tl|SUB Talep}} şablonu tarafından, talebin <code>komite</code> alanına göre kendiliğinden doldurulur.
+
+[[Kategori:Sithpedi Uluslar Birliği talepleri]]

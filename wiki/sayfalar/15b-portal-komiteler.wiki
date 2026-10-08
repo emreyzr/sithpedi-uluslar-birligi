@@ -1,0 +1,13 @@
+__NOTOC__
+{{SUB Başlık}}
+<templatestyles src="Şablon:SUB Portal/stil.css" />
+<div class="sub-icerik">
+{{#invoke:SUB|komiteKutulari}}
+<div class="sub-not">Sayılar, komiteye atanmış bütün talepleri (açık ve kapanmış) gösterir. Her talep, açılırken {{tl|SUB Talep}} şablonunun <code>komite</code> alanıyla bir komiteye atanır.</div>
+
+[[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]]'nin yetki ve sorumlulukları, [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|Kuruluş Bildirgesi]] uyarınca beş komiteye devredilmiştir. Tek bir komitenin görev alanına girmeyen konular ise bütün üyelerin katıldığı Genel Kurul'da görüşülür.
+
+{{#invoke:SUB|komiteBolumleri}}
+</div>
+
+[[Kategori:Sithpedi Uluslar Birliği]]

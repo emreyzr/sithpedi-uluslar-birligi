@@ -15,6 +15,7 @@ __NOTOC__ __NOEDITSECTION__
 <div class="sub-istatistik-kutu"><div class="sub-istatistik-sayi">{{PAGESINCATEGORY:Sithpedi Uluslar Birliği talepleri|pages}}</div><div class="sub-istatistik-etiket">[[:Kategori:Sithpedi Uluslar Birliği talepleri|Toplam talep]]</div></div>
 </div>
 {{#ifexpr:{{PAGESINCATEGORY:Sithpedi Uluslar Birliği durumu belirsiz talepleri|pages|R}} > 0|<div class="sub-talep-uyari" style="margin:0 0 24px;">'''Dikkat:''' {{PAGESINCATEGORY:Sithpedi Uluslar Birliği durumu belirsiz talepleri|pages}} talebin <code>durum</code> alanı tanınmıyor; bu talepler listelerde görünmez. [[:Kategori:Sithpedi Uluslar Birliği durumu belirsiz talepleri|Talepleri görüntüleyip düzeltin]].</div>}}
+{{#ifexpr:{{PAGESINCATEGORY:Sithpedi Uluslar Birliği komitesi belirtilmemiş talepleri|pages|R}} > 0|<div class="sub-talep-uyari" style="margin:0 0 24px;">'''Dikkat:''' {{PAGESINCATEGORY:Sithpedi Uluslar Birliği komitesi belirtilmemiş talepleri|pages}} talebe geçerli bir komite atanmamış; bu talepler listelerde ve sayılarda görünmez. [[:Kategori:Sithpedi Uluslar Birliği komitesi belirtilmemiş talepleri|Talepleri görüntüleyip bir komiteye atayın]].</div>}}
 <div class="sub-sutunlar">
 <div class="sub-sutun-ana">
 <div class="sub-kutu">
@@ -112,18 +113,10 @@ noresultsheader = ''Henüz kapanmış bir talep bulunmamaktadır.''
 </div>
 </div>
 <div class="sub-kutu">
-<div class="sub-kutu-baslik">Komiteler</div>
+<div class="sub-kutu-baslik">[[Portal:Sithpedi Uluslar Birliği/Komiteler|Komiteler]]</div>
 <div class="sub-kutu-icerik">
-; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde I: Güvenlik Konseyi|I. Güvenlik Konseyi]]
-: Uluslar arasındaki çatışmaların kılıç çekilmeden, masa başında çözülmesi.
-; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde II: Ulaştırma ve Altyapı Komitesi|II. Ulaştırma ve Altyapı Komitesi]]
-: Uluslar arası yollar, köprüler ve geçitler.
-; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde III: Ortak Alan Komitesi|III. Ortak Alan Komitesi]]
-: Atatürk Orman Çiftliği başta olmak üzere tarafsız toplanma alanları.
-; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde IV: Ticaret ve İşbirliği Komitesi|IV. Ticaret ve İşbirliği Komitesi]]
-: Köylü ticareti, haksız rekabetin önlenmesi, kaynak paylaşımı.
-; [[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi#Madde V: Sithpedi Tarihini Araştırma Komitesi|V. Sithpedi Tarihini Araştırma Komitesi]]
-: Savaşların, barışların ve şaheserlerin kaydı; Sithpedi Külliyatı.
+{{#invoke:SUB|komiteListesi}}
+<div class="sub-talep-alt"><span class="sub-ok">[[Portal:Sithpedi Uluslar Birliği/Komiteler|Komiteler ve talep sayıları]]</span></div>
 </div>
 </div>
 <div class="sub-kutu">

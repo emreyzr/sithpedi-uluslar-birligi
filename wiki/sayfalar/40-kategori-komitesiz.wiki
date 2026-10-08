@@ -1,0 +1,3 @@
+Komite alanı boş bırakılmış ya da tanınmayan bir değer içeren [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] talepleri. Bu talepler geçersizdir: portal listelerinde ve sayılarda görünmezler. Sayfalardaki {{tl|SUB Talep}} şablonunun <code>komite</code> alanına geçerli bir [[Portal:Sithpedi Uluslar Birliği/Komiteler|komite]] yazılmalıdır.
+
+[[Kategori:Sithpedi Uluslar Birliği]]

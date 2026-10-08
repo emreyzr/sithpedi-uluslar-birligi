@@ -4,7 +4,7 @@
 | açan    = ~~<noinclude></noinclude>~
 | ulus    = <!-- Temsil ettiğiniz ulus: Kan ve Demir İmparatorluğu, Antik Roma İmparatorluğu, Ütopya, Babiller, Güneş Kağanlığı veya Doğru Köyü -->
 | tarih   = ~~<noinclude></noinclude>~~<noinclude></noinclude>~
-| komite  = <!-- güvenlik, ulaştırma, ortak alan, ticaret, tarih veya genel -->
+| komite  = <!-- ZORUNLU: güvenlik, ulaştırma, ortak alan, ticaret, tarih veya genel (Genel Kurul). Komitesiz talepler listelere alınmaz. -->
 | madde   = <!-- Değiştirilmesi önerilen madde, örn. Madde III. Yeni bir madde öneriyorsanız "Yeni madde" yazın. -->
 | kapatan = <!-- Talep kapanırken doldurulur -->
 | kapanış = <!-- Talep kapanırken doldurulur -->

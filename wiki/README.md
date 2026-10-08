@@ -64,6 +64,7 @@ The [`manifest.tsv`](manifest.tsv) file holds the same mapping in machine-readab
 | 13 | `sayfalar/13-portal-kurulus-bildirgesi.wiki` | `Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi` |
 | 14 | `sayfalar/14-portal-delegeler.wiki` | `Portal:Sithpedi Uluslar Birliği/Delegeler` |
 | 15 | `sayfalar/15-portal-talep-yonergesi.wiki` | `Portal:Sithpedi Uluslar Birliği/Talep yönergesi` |
+| 15b | `sayfalar/15b-portal-komiteler.wiki` | `Portal:Sithpedi Uluslar Birliği/Komiteler` |
 | 16 | `sayfalar/16-portal-duzenleme-notu.wiki` | `Portal:Sithpedi Uluslar Birliği/Talep yönergesi/Düzenleme notu` |
 | 17 | `sayfalar/17-portal-ana-sayfa.wiki` | `Portal:Sithpedi Uluslar Birliği` |
 | 18 | `sayfalar/18-kategori-sub.wiki` | `Kategori:Sithpedi Uluslar Birliği` |
@@ -76,6 +77,19 @@ The [`manifest.tsv`](manifest.tsv) file holds the same mapping in machine-readab
 | 25 | `sayfalar/25-kategori-tartisma.wiki` | `Kategori:Sithpedi Uluslar Birliği tartışmaları` |
 | 26 | `sayfalar/26-kategori-belirsiz.wiki` | `Kategori:Sithpedi Uluslar Birliği durumu belirsiz talepleri` |
 | 27 | `sayfalar/27-kategori-sablonlar.wiki` | `Kategori:Sithpedi Uluslar Birliği şablonları` |
+| 28 | `sayfalar/28-kategori-komite-i.wiki` | `Kategori:Sithpedi Uluslar Birliği Güvenlik Konseyi talepleri` |
+| 29 | `sayfalar/29-kategori-komite-i-acik.wiki` | `Kategori:Sithpedi Uluslar Birliği Güvenlik Konseyi açık talepleri` |
+| 30 | `sayfalar/30-kategori-komite-ii.wiki` | `Kategori:Sithpedi Uluslar Birliği Ulaştırma ve Altyapı Komitesi talepleri` |
+| 31 | `sayfalar/31-kategori-komite-ii-acik.wiki` | `Kategori:Sithpedi Uluslar Birliği Ulaştırma ve Altyapı Komitesi açık talepleri` |
+| 32 | `sayfalar/32-kategori-komite-iii.wiki` | `Kategori:Sithpedi Uluslar Birliği Ortak Alan Komitesi talepleri` |
+| 33 | `sayfalar/33-kategori-komite-iii-acik.wiki` | `Kategori:Sithpedi Uluslar Birliği Ortak Alan Komitesi açık talepleri` |
+| 34 | `sayfalar/34-kategori-komite-iv.wiki` | `Kategori:Sithpedi Uluslar Birliği Ticaret ve İşbirliği Komitesi talepleri` |
+| 35 | `sayfalar/35-kategori-komite-iv-acik.wiki` | `Kategori:Sithpedi Uluslar Birliği Ticaret ve İşbirliği Komitesi açık talepleri` |
+| 36 | `sayfalar/36-kategori-komite-v.wiki` | `Kategori:Sithpedi Uluslar Birliği Sithpedi Tarihini Araştırma Komitesi talepleri` |
+| 37 | `sayfalar/37-kategori-komite-v-acik.wiki` | `Kategori:Sithpedi Uluslar Birliği Sithpedi Tarihini Araştırma Komitesi açık talepleri` |
+| 38 | `sayfalar/38-kategori-komite-vi.wiki` | `Kategori:Sithpedi Uluslar Birliği Genel Kurul talepleri` |
+| 39 | `sayfalar/39-kategori-komite-vi-acik.wiki` | `Kategori:Sithpedi Uluslar Birliği Genel Kurul açık talepleri` |
+| 40 | `sayfalar/40-kategori-komitesiz.wiki` | `Kategori:Sithpedi Uluslar Birliği komitesi belirtilmemiş talepleri` |
 
 Things to watch when pasting:
 

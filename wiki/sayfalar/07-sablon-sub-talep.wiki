@@ -5,16 +5,17 @@
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Açan delege</span>{{#if:{{{açan|}}}|{{{açan}}}{{#invoke:SUB|acanDurumu}}|—}}</div>
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Temsil ettiği ulus</span>{{#if:{{SUB Üye ulus|{{{ulus|}}}}}|{{SUB Üye ulus|{{{ulus|}}}|bağlantı}}|{{#if:{{{ulus|}}}|{{{ulus}}}|—}}}}</div>
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Açılış tarihi</span>{{#if:{{{tarih|}}}|{{{tarih}}}|—}}</div>
-<div class="sub-talep-alan"><span class="sub-talep-etiket">İlgili komite</span>{{SUB Komite|{{{komite|}}}}}</div>{{#if:{{{madde|}}}|
+<div class="sub-talep-alan"><span class="sub-talep-etiket">İlgili komite</span>{{#if:{{SUB Komite|{{{komite|}}}}}|{{SUB Komite|{{{komite|}}}|bağlantı}}|—}}</div>{{#if:{{{madde|}}}|
 <div class="sub-talep-alan"><span class="sub-talep-etiket">Değiştirilen madde</span>[[Portal:Sithpedi Uluslar Birliği/Kuruluş Bildirgesi|{{{madde}}}]]</div>}}
-</div>{{#invoke:SUB|talepUyarisi}}{{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}
+</div>{{#invoke:SUB|talepUyarisi}}{{#if:{{SUB Komite|{{{komite|}}}}}||
+<div class="sub-talep-uyari">'''Uyarı:''' Bu talebe geçerli bir komite atanmamış. Her talep bir [[Portal:Sithpedi Uluslar Birliği/Komiteler|komiteye]] atanmalıdır: <code>komite</code> alanına <code>güvenlik</code>, <code>ulaştırma</code>, <code>ortak alan</code>, <code>ticaret</code>, <code>tarih</code> veya <code>genel</code> yazın. Komite atanana kadar bu talep portal listelerinde ve sayılarda görünmez.</div>}}{{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}
 | kabul | ret | kapandi | geri =
 <div class="sub-talep-sonuc {{#switch:{{SUB Durum/anahtar|{{{durum|}}}}}|kabul=|ret=sub-talep-sonuc-ret|#default=sub-talep-sonuc-notr}}">'''Bu talep kapanmıştır''' — {{SUB Durum|{{{durum|}}}}}{{#if:{{{kapatan|}}}|&#32;· Kapatan: {{{kapatan}}}}}{{#if:{{{kapanış|}}}|&#32;· {{{kapanış}}}}}{{#if:{{{sonuç|}}}|<br />'''Sonuç:''' {{{sonuç}}}}}<br /><span class="sub-not">Kapanmış talepler arşiv niteliğindedir; lütfen değiştirmeyin. Konuyu yeniden gündeme getirmek için yeni bir talep açın.</span></div>
 | #default =
 }}
 <div class="sub-talep-alt"><span class="sub-ok plainlinks">[{{fullurl:{{FULLPAGENAME}}|action=edit&section=new}} Yeni görüş başlığı ekle]</span><span class="sub-ok">[[Portal:Sithpedi Uluslar Birliği/Talep yönergesi|Talep yönergesi]]</span><span class="sub-ok">[[Portal:Sithpedi Uluslar Birliği/Delegeler|Delegeler]]</span><span class="sub-ok">[[Portal:Sithpedi Uluslar Birliği|Portala dön]]</span></div>
 </div>
-{{#ifeq:{{NAMESPACE}}{{#titleparts:{{PAGENAME}}|2}}|Portal:Sithpedi Uluslar Birliği/Talepler|[[Kategori:Sithpedi Uluslar Birliği talepleri]]{{#switch:{{SUB Tür|{{{tür|}}}|anahtar}}
+{{#ifeq:{{NAMESPACE}}{{#titleparts:{{PAGENAME}}|2}}|Portal:Sithpedi Uluslar Birliği/Talepler|{{#if:{{SUB Komite|{{{komite|}}}}}|[[Kategori:Sithpedi Uluslar Birliği talepleri]]{{#switch:{{SUB Tür|{{{tür|}}}|anahtar}}
 | degisiklik = [[Kategori:Sithpedi Uluslar Birliği değişiklik önerileri]]
 | oylama = [[Kategori:Sithpedi Uluslar Birliği oylamaları]]
 | tartisma = [[Kategori:Sithpedi Uluslar Birliği tartışmaları]]
@@ -24,7 +25,7 @@
 | kabul = [[Kategori:Sithpedi Uluslar Birliği kapalı talepleri]][[Kategori:Sithpedi Uluslar Birliği kabul edilen talepleri]]
 | ret | kapandi | geri = [[Kategori:Sithpedi Uluslar Birliği kapalı talepleri]]
 | #default = [[Kategori:Sithpedi Uluslar Birliği durumu belirsiz talepleri]]
-}}}}</includeonly><noinclude>
+}}{{#invoke:SUB|komiteKategorileri|{{{komite|}}}|{{SUB Durum/anahtar|{{{durum|}}}}}}}|[[Kategori:Sithpedi Uluslar Birliği komitesi belirtilmemiş talepleri]]}}}}</includeonly><noinclude>
 == Şablon Açıklaması ==
 Bu şablon, [[Portal:Sithpedi Uluslar Birliği|Sithpedi Uluslar Birliği]] portalında açılan her talebin (değişiklik önerisi, oylama veya tartışma) en üstünde yer alır. Talebin türünü, durumunu, açan delegeyi ve ilgili komiteyi gösterir; talebi doğru kategorilere ekleyerek portaldaki listelerde görünmesini sağlar.
 
@@ -48,7 +49,7 @@ Bu şablonu elle eklemenize gerek yoktur: portaldaki "Yeni talep aç" kutuların
 |-
 | <code>tarih</code> || Açılış tarihi. Ön yüklemede <code><nowiki>~~~~~</nowiki></code> olarak gelir. || <code><nowiki>~~~~~</nowiki></code>
 |-
-| <code>komite</code> || İlgili komite: <code>güvenlik</code>, <code>ulaştırma</code>, <code>ortak alan</code>, <code>ticaret</code>, <code>tarih</code> veya <code>genel</code> (bkz. {{tl|SUB Komite}}) || <code>ulaştırma</code>
+| <code>komite</code> || '''Zorunlu.''' İlgili komite: <code>güvenlik</code>, <code>ulaştırma</code>, <code>ortak alan</code>, <code>ticaret</code>, <code>tarih</code> veya <code>genel</code> (bkz. {{tl|SUB Komite}}). Geçerli bir komite yazılmazsa talep listelere alınmaz. || <code>ulaştırma</code>
 |-
 | <code>madde</code> || ''(Yalnızca değişiklik önerileri)'' Değiştirilmesi önerilen madde || <code>Madde III</code>
 |-
@@ -87,5 +88,7 @@ Bu şablonu elle eklemenize gerek yoktur: portaldaki "Yeni talep aç" kutuların
 * [[:Kategori:Sithpedi Uluslar Birliği kabul edilen talepleri]]
 * [[:Kategori:Sithpedi Uluslar Birliği değişiklik önerileri]] / [[:Kategori:Sithpedi Uluslar Birliği oylamaları]] / [[:Kategori:Sithpedi Uluslar Birliği tartışmaları]]
 * [[:Kategori:Sithpedi Uluslar Birliği durumu belirsiz talepleri]] (durum alanı tanınmadığında)
+* Her komite için bir kategori, örneğin [[:Kategori:Sithpedi Uluslar Birliği Güvenlik Konseyi talepleri]], ve açık talepler için gizli bir alt kategori
+* [[:Kategori:Sithpedi Uluslar Birliği komitesi belirtilmemiş talepleri]] (komite alanı boş ya da tanınmadığında; bu durumda yukarıdaki kategorilerin hiçbiri eklenmez)
 
 [[Kategori:Sithpedi Uluslar Birliği şablonları]]</noinclude>
